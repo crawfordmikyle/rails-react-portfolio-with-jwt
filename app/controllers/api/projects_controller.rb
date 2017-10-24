@@ -1,8 +1,8 @@
 class Api::ProjectsController < ApplicationController
-  before_action :authenticate_api_user
+  before_action :authenticate_user
 
   def index
-    projects = Projects.all
+    projects = Project.all
     render json: projects, status: 200
   end 
 
