@@ -8,7 +8,11 @@ class Api::BlogPostsController < ApplicationController
 
   def create
     blog_post = BlogPost.create(blog_post_params)
-    blog_post.save
+    if blog_post.save
+      render json: blog_post, status: 200
+    else
+      render json: {message: "error"}, status: 400
+    end 
   end 
 
   def update
@@ -26,7 +30,7 @@ class Api::BlogPostsController < ApplicationController
   end 
 
   def blog_post_params
-
+    params.require(:blog_post).permit(:title, :body)
   end 
 
 end

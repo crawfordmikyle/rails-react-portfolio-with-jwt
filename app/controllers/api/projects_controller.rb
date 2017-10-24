@@ -1,6 +1,6 @@
 class Api::ProjectsController < ApplicationController
   before_action :authenticate_user, except: [:index]
-
+  require 'pry'
   def index
     projects = Project.all
     render json: projects, status: 200
@@ -8,8 +8,7 @@ class Api::ProjectsController < ApplicationController
 
   def create
     project = Project.create(project_params)
-    if project 
-      project.save
+    if project.save
       render json: project, status: 200
     else
       render json: {message: "error"}, status: 400
@@ -32,7 +31,7 @@ class Api::ProjectsController < ApplicationController
     @project = Project.find_by_id(params[:id])
   end 
 
-  # def project_params
-  #   params.require(:project).permit(title:, description:)
-  # end
+  def project_params
+    params.require(:project).permit(:title, :description)
+  end
 end
