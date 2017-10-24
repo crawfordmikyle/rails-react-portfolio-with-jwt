@@ -1,5 +1,5 @@
 class Api::ProjectsController < ApplicationController
-  before_action :authenticate_user
+  before_action :authenticate_user, except: [:index]
 
   def index
     projects = Project.all
