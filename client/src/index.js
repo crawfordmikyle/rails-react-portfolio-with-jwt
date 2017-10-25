@@ -8,8 +8,13 @@ import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 
-const rootReducer = combineReducers({
+import blogPostReducer from './reducers/blogPostReducer'
+import projectsReducer from './reducers/projectReducer'
+const middleware = [thunk]
 
+const rootReducer = combineReducers({
+  blogPostReducer,
+  projectsReducer
 });
 
 let store = createStore(
