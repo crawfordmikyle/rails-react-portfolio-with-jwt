@@ -15,6 +15,15 @@ class Api::ProjectsController < ApplicationController
     end 
   end
 
+  def update
+    set_project
+    if @project.update(project_params)
+      render json: @project
+    else 
+      render json: {message: "error"}, status: 400
+    end 
+  end 
+
   def destroy
     set_project
     if @project
