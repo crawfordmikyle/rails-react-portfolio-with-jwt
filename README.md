@@ -29,9 +29,9 @@ This is my portfolio web app.
 
 #### WebPage React
 -app
+-nav
   - index
     - landing
-    - nav
     - about  
     - projects
       -projects list
@@ -39,6 +39,7 @@ This is my portfolio web app.
       -project card
 
   - blog
-  - nav
-  - blogposts list
+  - blogposts
+    - blogposts list
+    - blog post list card
     - blog post card 
