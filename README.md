@@ -27,3 +27,18 @@ This is my portfolio web app.
 - POST -> /api/blog/posts (creates a new blog post)
 - PUT -> /api/blog/posts/:id (edit a blog post)
 
+#### WebPage React
+-app
+  - index
+    - landing
+    - nav
+    - about  
+    - projects
+      -projects list
+      -project list card
+      -project card
+
+  - blog
+  - nav
+  - blogposts list
+    - blog post card 
