@@ -8,14 +8,15 @@ body{
 }
 
 .nav ul{
-  border: solid;
   list-style-type: none;
 }
 
 .nav li{
+  margin-bottom: 10px;
   padding: 10px;
 }
 
 .nav li:hover{
-  background-color: green;
+  margin-bottom: 0px;
+  border-bottom: thick solid green;
 }

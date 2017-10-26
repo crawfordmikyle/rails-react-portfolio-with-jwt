@@ -4,8 +4,10 @@ import Nav from '../components/Nav'
 class App extends Component{
   render(){
     return(
-      <div>
-        <Landing/>
+      <div className="container main">
+        <div className="row">
+           <Landing/>
+        </div>
         <Nav/>
         <h1>Welcome</h1>
       </div>
