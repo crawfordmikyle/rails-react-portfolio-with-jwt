@@ -7,8 +7,10 @@
   padding: 0;
   margin: 0;
   display: inline-flex;
-  flex-flow: row wrap;
+  align-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   background-image: url("http://thewallpaper.co/wp-content/uploads/2016/10/Full-Screen-High-Definition-desktop-backgrounds-nature-hd-full-hd-download-high-definiton-wallpapers-desktop-images-windows-10-backgrounds-colourful-computer-wallpapers-colours-artwork-1920x1052.jpg") ;
@@ -22,10 +24,12 @@ break{
 }
 
 .imgDiv{
+  align-self: center;
   padding: 10px;
 }
 
 .textDiv{
+  align-self: center;
   border: 10px solid #ffffff;
   border-radius: 50px;
   padding: 10px;
