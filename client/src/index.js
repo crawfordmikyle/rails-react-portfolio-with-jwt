@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './skeleton.css'
+import './normalize.css'
 import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
