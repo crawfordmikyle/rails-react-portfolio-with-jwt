@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {getBlogPostsApi} from '../actions/blogPostActions'
-
+import BlogPostsList from '../components/BlogPostsList'
 class BlogPostsContainer extends Component {
   componentDidMount(){
     getBlogPostsApi()
@@ -9,9 +9,7 @@ class BlogPostsContainer extends Component {
 
   render(){
     return(
-      <div>
-        this is the BlogPostContainer
-      </div>
+      <BlogPostsList blogPosts={this.props.blogPosts}/>
     )
   }
 }
