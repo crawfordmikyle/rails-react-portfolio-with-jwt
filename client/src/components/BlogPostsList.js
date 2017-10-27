@@ -2,15 +2,15 @@ import React from 'react'
 import BlogPostListCard from './BlogPostListCard'
 const BlogPostList = ({blogPosts}) => {
   
-  const renderedBlogPosts = blogPosts.map((post)=>{
+  const posts = blogPosts.map((post) => {
     return(
-      <BlogPostListCard post={post}/>
+      <BlogPostListCard key={post.id} postData={post}/>
     )
   })
-  
+
   return(
     <div>
-      {renderedBlogPosts}
+      {posts}
     </div>
   )
 }

@@ -6,14 +6,9 @@ class App extends Component{
   render(){
     return(
       <div className="container main">
-        <div className="row">
-           <Landing/>
-        </div>
-        <Nav/>
-        <h1>Welcome</h1>
-        <div className="row">
+          <Landing/>
+          <Nav/>
           <BlogPostsContainer/>
-        </div>
       </div>
     )
   }

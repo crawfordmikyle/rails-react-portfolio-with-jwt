@@ -18,4 +18,4 @@ const mapStateToProps = (state) => {
   return {blogPosts: state.blogPostReducer}
 }
 
-export default connect(mapStateToProps,getBlogPostsApi)(BlogPostsContainer)
+export default connect(mapStateToProps,{getBlogPostsApi})(BlogPostsContainer)
