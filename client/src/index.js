@@ -12,11 +12,12 @@ import { Provider } from 'react-redux';
 
 import blogPostReducer from './reducers/blogPostReducer'
 import projectsReducer from './reducers/projectReducer'
+
 const middleware = [thunk]
 
 const rootReducer = combineReducers({
   blogPostReducer,
-  projectsReducer
+  projectsReducer,
 });
 
 let store = createStore(
