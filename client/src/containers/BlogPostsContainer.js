@@ -1,18 +1,17 @@
 import React, {Component} from 'react'
-import connect from 'react-redux'
-import getBlogPostsApi from '../actions/blogPostActions'
+import {connect} from 'react-redux'
+import {getBlogPostsApi} from '../actions/blogPostActions'
 
-class BlogPostContainer extends Component {
+class BlogPostsContainer extends Component {
   componentDidMount(){
-    debugger
+    getBlogPostsApi()
   }
 
   render(){
     return(
       <div>
-
+        this is the BlogPostContainer
       </div>
-
     )
   }
 }
@@ -23,4 +22,4 @@ const mapStateToProps = (state) =>{
   })
 }
 
-export connect(null,getBlogPostsApi)(BlogPostContainer)
+export default connect(mapStateToProps,getBlogPostsApi)(BlogPostsContainer)
