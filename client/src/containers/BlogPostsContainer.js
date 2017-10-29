@@ -3,8 +3,9 @@ import {connect} from 'react-redux'
 import {getBlogPostsApi} from '../actions/blogPostActions'
 import BlogPostsList from '../components/BlogPostsList'
 class BlogPostsContainer extends Component {
+  
   componentDidMount(){
-    getBlogPostsApi()
+    this.props.getBlogPostsApi()
   }
 
   render(){
