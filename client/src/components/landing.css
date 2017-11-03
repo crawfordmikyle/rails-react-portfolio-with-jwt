@@ -13,14 +13,7 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-image: url("http://thewallpaper.co/wp-content/uploads/2016/10/Full-Screen-High-Definition-desktop-backgrounds-nature-hd-full-hd-download-high-definiton-wallpapers-desktop-images-windows-10-backgrounds-colourful-computer-wallpapers-colours-artwork-1920x1052.jpg") ;
-}
-
-break{
-  flex-basis: 100%;
-  width: 0px; 
-  height: 0px; 
-  overflow: hidden;
+  background-image: url('../landingbg.jpg') ;
 }
 
 .imgDiv{

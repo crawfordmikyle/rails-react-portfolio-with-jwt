@@ -5,18 +5,26 @@ body{
 
 .nav{
   display: inline-flex;
+  box-shadow: 0 2px 2px 2px gray;
+  width: 100vw;
+  align-content: left;
+  align-items: left;
+  height: auto;
 }
 
 .nav ul{
   list-style-type: none;
+  box-shadow: none;
+  margin: 0px;
 }
 
 .nav li{
-  margin-bottom: 10px;
-  padding: 10px;
+  margin: 5px;
+  box-shadow: none;
 }
 
 .nav li:hover{
   margin-bottom: 0px;
   border-bottom: thick solid green;
+  box-shadow: none;
 }

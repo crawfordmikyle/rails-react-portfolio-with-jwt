@@ -1,7 +1,7 @@
 export default function projectReducer(state = [],action){
   switch(action.type){
     case 'GET_PROJECTS':
-      return Object.assign([],state,action.projects);
+      return action.projects
     default:
       return state;
   }
