@@ -1,6 +1,5 @@
 class Api::ProjectsController < ApplicationController
   before_action :authenticate_user, except: [:index]
-  require 'pry'
   def index
     projects = Project.all
     render json: projects, status: 200

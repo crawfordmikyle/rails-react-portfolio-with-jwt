@@ -5,7 +5,6 @@ import './skeleton.css'
 import './normalize.css'
 import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';

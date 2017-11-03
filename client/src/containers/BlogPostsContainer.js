@@ -10,7 +10,7 @@ class BlogPostsContainer extends Component {
 
   render(){
     return(
-      <BlogPostsList blogPosts={this.props.blogPosts}/>
+      <BlogPostsList/>
     )
   }
 }
