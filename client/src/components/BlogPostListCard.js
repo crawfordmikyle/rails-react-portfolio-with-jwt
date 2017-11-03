@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BlogPostListCard = () => {
+const BlogPostListCard = ({bpData}) => {
   return(
     <div>
       <h5>Testing</h5>

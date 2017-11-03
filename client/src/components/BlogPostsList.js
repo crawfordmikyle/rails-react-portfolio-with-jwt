@@ -6,13 +6,10 @@ const BlogPostList = ({blogPosts}) => {
 
 
   const renderedBlogPosts = blogPosts.map((bp)=>{
-
     return(
       <BlogPostListCard key={bp.id} bpData={bp}/>
     )
   })
-
-  console.log(renderedBlogPosts)
   
   return(
     <div>
