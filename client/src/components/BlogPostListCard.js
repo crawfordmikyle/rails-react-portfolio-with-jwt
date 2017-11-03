@@ -2,8 +2,9 @@ import React from 'react'
 
 const BlogPostListCard = ({bpData}) => {
   return(
-    <div>
-      <h5>Testing</h5>
+    <div className="blogPostCard">
+      <h5>{bpData.title}</h5>
+      <p>{bpData.body}</p>
     </div>
   )
 }

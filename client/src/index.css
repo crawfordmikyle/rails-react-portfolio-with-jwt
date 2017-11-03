@@ -28,3 +28,16 @@ body{
   border-bottom: thick solid green;
   box-shadow: none;
 }
+
+.blogPostCard{
+  width: 50vw;
+  margin: 20px;
+  height: auto;
+  -webkit-box-shadow: 10px 10px 35px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 35px -12px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 35px -12px rgba(0,0,0,0.75);}
+
+.blogPostList{
+  display: inline-flex;
+  flex-wrap: wrap;
+}

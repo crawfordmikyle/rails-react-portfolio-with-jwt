@@ -12,8 +12,9 @@ const BlogPostList = ({blogPosts}) => {
   })
   
   return(
-    <div>
+    <div className="blogPostList">
       <h4>Blog Posts</h4>
+      <br/>
       {renderedBlogPosts}
     </div>
   )
