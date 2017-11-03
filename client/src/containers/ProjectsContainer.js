@@ -5,6 +5,7 @@ import {getProjectsApi} from '../actions/projectActions'
 class ProjectsContainer extends Component {
   componentDidMount(){
 
+    this.props.getProjectsApi()
   }
 
   render(){
@@ -17,7 +18,9 @@ class ProjectsContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
-
+  return({
+    projects: state.projects
+  })
 }
 
-export default connect(null)(ProjectsContainer)
+export default connect(mapStateToProps,{getProjectsApi})(ProjectsContainer)
