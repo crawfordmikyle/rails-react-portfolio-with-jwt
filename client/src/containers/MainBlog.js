@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-
+import BlogPostsContainer from './BlogPostsContainer'
 class MainBlog extends Component{
  render(){
     return(
       <div>
-        <p>Testing Blog</p>
+        <BlogPostsContainer/>
       </div>
     )
   }

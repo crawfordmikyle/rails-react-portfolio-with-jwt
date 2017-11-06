@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
-
-class MainAdmin extends Component{
-   render(){
+import Login from './Login'
+class MainAdmin extends Component{å
+   
+  render(){
     return(
       <div>
         <p>Testing Admin</p>
+        <Login />
       </div>
     )
   }
