@@ -8,6 +8,7 @@
   margin: 0;
   display: inline-flex;
   align-content: center;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   flex-direction: column;

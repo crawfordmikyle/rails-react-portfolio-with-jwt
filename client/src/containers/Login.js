@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import {login} from '../actions/loginActions'
 
 class Login extends Component {
   constructor(){
@@ -15,14 +17,17 @@ class Login extends Component {
     })
   }
 
-  handleLogin(){
+  handleOnSubmit(event){
+    this.props.login()
+  }
 
+  handleLogin(){
   }
 
   render(){
     return(
       <div>
-        <form>
+        <form onSubmit={(event) => this.handleOnSubmit(event)}>
           <label htmlFor="email">Email</label>
           <input type="email" id="email" value={this.state.email} onChange={(event) => this.handleOnChange(event)}/>
 
@@ -36,4 +41,4 @@ class Login extends Component {
   }
 }
 
-export default Login
+export default connect(null,{login})(Login)
