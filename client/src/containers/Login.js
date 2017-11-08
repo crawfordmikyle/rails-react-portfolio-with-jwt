@@ -6,8 +6,9 @@ class Login extends Component {
   constructor(){
     super();
     this.state = {
-      email: '',
-      password: '',
+      email: 'crawfordmikyle@gmail.com',
+      password: 'password',
+      token: window.sessionStorage
     }
   }
   
@@ -18,10 +19,17 @@ class Login extends Component {
   }
 
   handleOnSubmit(event){
-    this.props.login()
+    event.preventDefault()
+    const loginInfo = {'auth':{'email':`${this.state.email}`,'password':`${this.state.password}`}}
+    this.props.login(loginInfo)
   }
 
   handleLogin(){
+
+  }
+
+  componentDidMount(){
+    console.log(this.state)
   }
 
   render(){

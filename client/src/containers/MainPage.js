@@ -10,6 +10,7 @@ class MainPage extends Component{
     return(
       <div>
         <Landing />
+        <Nav/>
         <About />
         <ProjectsContainer />
       </div>

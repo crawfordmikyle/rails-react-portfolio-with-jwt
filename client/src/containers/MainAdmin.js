@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Login from './Login'
+import Admin from './Admin'
 class MainAdmin extends Component{å
    
   render(){
@@ -7,6 +8,7 @@ class MainAdmin extends Component{å
       <div>
         <p>Testing Admin</p>
         <Login />
+        <Admin />
       </div>
     )
   }

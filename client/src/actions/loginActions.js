@@ -9,20 +9,18 @@ const loginAction = (data) => {
 
 // Asynchronous Actions
 
-export const login = (data) => {
-  const loginToken = {"auth":{
-    "email":"crawfordmikyle@gmail.com",
-    "password":"password"
-  }}
-
+export const login = (loginData) => {
+  console.log(JSON.stringify(loginData))
   return dispatch => {
-    //debugger
     return fetch("/user_token",{
       method: "post",
-      body: loginToken,
+      headers: {
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify(loginData),
     })
-    .then(responce => responce.json)
-    .then(tokenData => console.log(tokenData))
+    .then(responce => responce.json())
+    .then(tokenData => window.sessionStorage.setItem("loginToken",tokenData.jwt))
     .catch(error => console.log(error))
   }
 }
