@@ -7,8 +7,6 @@ body{
   display: inline-flex;
   box-shadow: 0 2px 2px 2px gray;
   width: 100vw;
-  align-content: left;
-  align-items: left;
   height: auto;
 }
 

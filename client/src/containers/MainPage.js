@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import About from '../components/About'
-import Landing from '../components/Landing'
+import About from '../components/main/About'
+import Landing from '../components/main/Landing'
 import Nav from '../components/Nav'
 import ProjectsContainer from './ProjectsContainer'
 

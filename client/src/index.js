@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './skeleton.css'
 import './normalize.css'
-import App from './containers/App';
+import App from './containers/app';
 import registerServiceWorker from './registerServiceWorker';
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunk from 'redux-thunk';

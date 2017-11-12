@@ -4,7 +4,7 @@ const Nav = () => {
     <div className="nav">
      <ul className="nav ul">
       <li className="nav li">Home</li>
-      <li>About</li>
+      <li><a href="#about">About</a></li>
       <li>Projects</li>
       <li><a href='/blog'>Blog</a></li>
       <li>Contact</li>

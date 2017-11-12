@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {getProjectsApi} from '../actions/projectActions'
-import ProjectsList from '../components/ProjectsList'
+import ProjectsList from '../components/main/ProjectsList'
 class ProjectsContainer extends Component {
   componentDidMount(){
     this.props.getProjectsApi()
