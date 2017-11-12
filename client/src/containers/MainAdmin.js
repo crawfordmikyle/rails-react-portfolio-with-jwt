@@ -1,14 +1,13 @@
 import React, {Component} from 'react'
 import Login from './Login'
-import Admin from './Admin'
+import AdminHeading from '../components/admin/AdminHeading'
 class MainAdmin extends Component{å
    
   render(){
     return(
       <div>
-        <p>Testing Admin</p>
+        <AdminHeading/>
         <Login />
-        <Admin />
       </div>
     )
   }

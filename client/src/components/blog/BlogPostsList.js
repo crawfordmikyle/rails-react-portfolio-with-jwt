@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import BlogPostListCard from './BlogPostListCard'
-
+import Nav from '../Nav'
 const BlogPostList = ({blogPosts}) => {
 
 
@@ -13,9 +13,11 @@ const BlogPostList = ({blogPosts}) => {
   
   return(
     <div className="blogPostList">
-      <h4>Blog Posts</h4>
+      <Nav/>
       <br/>
-      {renderedBlogPosts}
+      <div className="renderedBlogPosts">
+        {renderedBlogPosts}
+      </div>
     </div>
   )
 }
