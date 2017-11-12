@@ -24,14 +24,6 @@ class Login extends Component {
     this.props.login(loginInfo)
   }
 
-  handleLogin(){
-
-  }
-
-  componentDidMount(){
-    console.log(this.state)
-  }
-
   render(){
     return(
       <div>

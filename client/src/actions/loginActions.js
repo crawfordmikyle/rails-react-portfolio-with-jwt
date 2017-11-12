@@ -10,7 +10,6 @@ const loginAction = (data) => {
 // Asynchronous Actions
 
 export const login = (loginData) => {
-  console.log(JSON.stringify(loginData))
   return dispatch => {
     return fetch("/user_token",{
       method: "post",
