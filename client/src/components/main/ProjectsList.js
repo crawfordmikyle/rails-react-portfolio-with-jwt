@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import ProjectListCard from './ProjectListCard'
-
+import './projects.css'
 const ProjectList = ({projects}) => {
 
 
@@ -12,7 +12,7 @@ const ProjectList = ({projects}) => {
   })
   console.log(renderedProjects)
   return(
-    <div>
+    <div className='projects'>
       {renderedProjects}
     </div>
   )

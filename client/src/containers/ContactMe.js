@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-
+import './contact.css'
 class ContactMe extends Component {
   constructor(){
     super();
@@ -13,7 +13,8 @@ class ContactMe extends Component {
 
   render(){
     return(
-      <div>
+      <div className="contact">
+        <h1>Contact Me</h1>
         <form>
           <label htmlFor="Name">Name</label>
           <input type="text" id="Name" />

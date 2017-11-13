@@ -1,13 +1,15 @@
 import React from 'react'
+import { Router, Route, Link } from 'react-router-dom'
+
 const Nav = () => {
   return(
     <div className="nav">
      <ul className="nav ul">
-      <li className="nav li">Home</li>
-      <li><a href="#about">About</a></li>
-      <li>Projects</li>
-      <li><a href='/blog'>Blog</a></li>
-      <li>Contact</li>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/">About</Link></li>
+      <li><Link to="/blog">Blog</Link></li>
+      <li><Link to="/">Contact</Link></li>
+      <li><Link to="/admin">Login</Link></li>
      </ul>
     </div>
   )
