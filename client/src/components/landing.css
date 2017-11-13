@@ -14,7 +14,7 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-image: url('../landingbg.jpg') ;
+  background-image: url('../media/landingbg.jpg') ;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

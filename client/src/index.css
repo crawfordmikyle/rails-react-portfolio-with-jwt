@@ -1,6 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body{
   padding: 0px;
   margin: 0px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+div{
+  min-width: 450px;
 }
 
 .nav{
@@ -44,4 +70,12 @@ body{
 .blogPostList{
   display: inline-flex;
   flex-wrap: wrap;
+}
+
+.sectionHeadding{
+  border: solid;
+  border-radius: 30px;
+  margin: 50px; 
+  align-content: center;
+  align-items: center;
 }

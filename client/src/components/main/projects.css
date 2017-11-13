@@ -3,3 +3,9 @@
   height: 100vh;
   background-color: #3DA5D9;
 }
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  text-align: center;
+}

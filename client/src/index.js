@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './skeleton.css'
-import './normalize.css'
 import App from './containers/app';
 import registerServiceWorker from './registerServiceWorker';
 import {createStore, applyMiddleware, combineReducers} from 'redux';

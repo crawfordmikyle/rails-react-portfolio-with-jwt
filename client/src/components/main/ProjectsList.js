@@ -13,7 +13,12 @@ const ProjectList = ({projects}) => {
   console.log(renderedProjects)
   return(
     <div className='projects'>
-      {renderedProjects}
+      <div className='heading'>
+        <h4>Projects</h4>
+      </div>
+      <div>
+        {renderedProjects}
+      </div>
     </div>
   )
 }

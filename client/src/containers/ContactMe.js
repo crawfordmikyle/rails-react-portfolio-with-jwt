@@ -14,19 +14,24 @@ class ContactMe extends Component {
   render(){
     return(
       <div className="contact">
-        <h1>Contact Me</h1>
-        <form>
-          <label htmlFor="Name">Name</label>
-          <input type="text" id="Name" />
+      
+        <div className='heading'>
+          <h4>Contact Me</h4>
+        </div>
+        <div className=''>
+          <form>
+            <label htmlFor="Name">Name</label>
+            <input type="text" id="Name" />
 
-          <label htmlFor="Email"> Email</label>
-          <input type="email" id="Email" />
+            <label htmlFor="Email"> Email</label>
+            <input type="email" id="Email" />
 
-          <label htmlFor="Message">Message</label>
-          <input type="text" id="Message" />
-          <br/>
-          <input type="submit"/>
-        </form>
+            <label htmlFor="Message">Message</label>
+            <input type="text" id="Message" />
+            <br/>
+            <input type="submit"/>
+          </form>
+        </div>
       </div>
     )
   }

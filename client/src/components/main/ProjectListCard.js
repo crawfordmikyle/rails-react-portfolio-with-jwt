@@ -3,8 +3,9 @@ import React from 'react'
 const BlogPostListCard = ({projectData}) => {
   return(
     <div>
-      <h4>{projectData.title}</h4>
+      <h5>{projectData.title}</h5>
       <p>{projectData.description}</p>
+      <a href="">GitHub Link</a>
     </div>
   )
 }

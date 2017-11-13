@@ -3,3 +3,12 @@
   height: 100vh;
   background-color: #5FB0B7;
 }
+
+h1{
+  margin: 0px;
+}
+
+form{
+  width: 30vw;
+  height: 30vw;
+}
