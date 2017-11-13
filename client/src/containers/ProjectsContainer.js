@@ -10,7 +10,6 @@ class ProjectsContainer extends Component {
   render(){
     return(
       <div className="Projects">
-        <h1>Projects</h1>
         <ProjectsList/>
       </div>
     )

@@ -5,9 +5,9 @@ import './projects.css'
 const ProjectList = ({projects}) => {
 
 
-  const renderedProjects = projects.map((bp)=>{
+  const renderedProjects = projects.map((project)=>{
     return(
-      <ProjectListCard key={bp.id} bpData={bp}/>
+      <ProjectListCard key={project.id} projectData={project}/>
     )
   })
   console.log(renderedProjects)
