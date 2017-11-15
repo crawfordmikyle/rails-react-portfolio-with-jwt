@@ -6,7 +6,7 @@ const About = () => {
       <div className='sectionHeadding'>
         <h4>About Me</h4>
       </div>
-      <div>
+      <div className="aboutContent">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla malesuada erat, et hendrerit enim malesuada eget. 
           Nulla felis ipsum, vulputate in risus sodales, vulputate luctus tellus. Vivamus felis justo, egestas id elementum in, euismod 
