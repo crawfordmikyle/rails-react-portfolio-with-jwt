@@ -1,5 +1,8 @@
 .about{
-  width: 100vw;
-  height: 100vh;
+  display: inline-flex;
   background-color: #9649CB;
+}
+
+.sectionHeadding{
+  width: 100vw; 
 }
