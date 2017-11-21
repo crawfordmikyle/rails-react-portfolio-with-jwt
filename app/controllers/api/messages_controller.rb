@@ -1,5 +1,5 @@
 class Api::MessagesController < ApplicationController
-  
+
   def index
     messages = Message.all
     render :json messages, status: 200
@@ -14,7 +14,6 @@ class Api::MessagesController < ApplicationController
     end 
   end 
 
-
   def destroy
     if @message.delete
       render json: {message: "blog post deleted"}
@@ -24,5 +23,13 @@ class Api::MessagesController < ApplicationController
   end 
 
 private
+
+  def set_message
+    @message = Message.find_by_id(params[:id])
+  end 
+
+  def message_params
+    params.require(:message).permit(:sender_name, :sender_email, :sender_phone, :sender_messages)
+  end
   
 end
