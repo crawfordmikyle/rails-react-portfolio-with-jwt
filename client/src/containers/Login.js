@@ -20,7 +20,7 @@ class Login extends Component {
 
   handleOnSubmit(event){
     event.preventDefault()
-    const loginInfo = {'auth':{'email':`${this.state.email}`,'password':`${this.state.password}`}}
+    const loginInfo = {email: this.state.email, password: this.state.password}
     this.props.login(loginInfo)
   }
 
