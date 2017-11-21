@@ -13,7 +13,6 @@ const BlogPostList = ({blogPosts}) => {
   
   return(
     <div className="blogPostList">
-      <Nav/>
       <br/>
       <div className="renderedBlogPosts">
         {renderedBlogPosts}

@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {getBlogPostsApi} from '../actions/blogPostActions'
 import BlogPostsList from '../components/blog/BlogPostsList'
+
 class BlogPostsContainer extends Component {
   
   componentDidMount(){
