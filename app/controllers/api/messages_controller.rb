@@ -1,4 +1,5 @@
 class Api::MessagesController < ApplicationController
+  before_action :authenticate_user, except: [:create]
 
   def index
     messages = Message.all

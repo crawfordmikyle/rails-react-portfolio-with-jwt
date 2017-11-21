@@ -9,12 +9,14 @@ import { Provider } from 'react-redux';
 
 import blogPostReducer from './reducers/blogPostReducer'
 import projectsReducer from './reducers/projectReducer'
+import messageReducer from './reducers/messageReducer'
 
 const middleware = [thunk]
 
 const rootReducer = combineReducers({
   blogPostReducer,
   projectsReducer,
+  messageReducer,
 });
 
 let store = createStore(
