@@ -2,7 +2,7 @@ class Api::MessagesController < ApplicationController
 
   def index
     messages = Message.all
-    render :json messages, status: 200
+    render json: messages, status: 200
   end 
 
   def create

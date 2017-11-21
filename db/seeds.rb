@@ -8,3 +8,4 @@
 
 projects = Project.create([{title: "Test Project One",description:"project description"},{title: "Test Project Two",description:"project description"},{title: "Test Project Three",description:"project description"}])
 blog_posts = BlogPost.create([{title: "Test Blog Post One", body:"blog post body"},{title: "Test Blog Post Two", body:"blog post body"},{title: "Test Blog Post Three", body:"blog post body"}])
+messages = Message.create([{sender_name: "Test Sender One", sender_email: "test@test.com", sender_phone:"206-222-2222", sender_messages:"test message content"},{sender_name: "Test Sender One", sender_email: "test@test.com", sender_phone:"206-222-2222", sender_messages:"test message content"},{sender_name: "Test Sender One", sender_email: "test@test.com", sender_phone:"206-222-2222", sender_messages:"test message content"}])

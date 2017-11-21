@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   namespace :api do
     resources :projects 
     resources :blog_posts
+    resources :messages
   end 
 end
