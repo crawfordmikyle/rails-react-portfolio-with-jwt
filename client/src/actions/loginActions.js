@@ -56,8 +56,7 @@ export function login(creds) {
         } else {
           debugger
           // If login was successful, set the token in local storage
-          localStorage.setItem('id_token', user.id_token)
-          localStorage.setItem('id_token', user.access_token)
+          localStorage.setItem('jwtToken', user.jwt)
           // Dispatch the success action
           dispatch(receiveLogin(user))
         }
