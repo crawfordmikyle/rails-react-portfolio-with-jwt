@@ -31,11 +31,12 @@ const loginError = (message) => {
 // Asynchronous Actions
 
 export function login(creds) {
-  
+  let authData = {'auth':{'email':`${creds.email}`,'password':`${creds.password}`}}
+
   let config = {
     method: 'POST',
     headers: { 'Content-Type':'application/json' },
-    body: {'auth':{'email':`${creds.email}`,'password':`${creds.password}`}}
+    body: JSON.stringify(authData),
   }
 
   return dispatch => {
@@ -51,7 +52,9 @@ export function login(creds) {
           // dispatch the error condition
           dispatch(loginError(user.message))
           return Promise.reject(user)
+
         } else {
+          debugger
           // If login was successful, set the token in local storage
           localStorage.setItem('id_token', user.id_token)
           localStorage.setItem('id_token', user.access_token)
@@ -61,33 +64,3 @@ export function login(creds) {
       }).catch(err => console.log("Error: ", err))
   }
 }
-
-// export const LOGIN_REQUEST = 'LOGIN_REQUEST'
-// export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
-// export const LOGIN_FAILURE = 'LOGIN_FAILURE'
-
-// function requestLogin(creds) {
-//   return {
-//     type: LOGIN_REQUEST,
-//     isFetching: true,
-//     isAuthenticated: false,
-//     creds
-//   }
-// }
-
-// function receiveLogin(user) {
-//   return {
-//     type: LOGIN_SUCCESS,
-//     isFetching: false,
-//     isAuthenticated: true,
-//     id_token: user.id_token
-//   }
-// }
-
-// function loginError(message) {
-//   return {
-//     type: LOGIN_FAILURE,
-//     isFetching: false,
-//     isAuthenticated: false,
-//     message
-//   }

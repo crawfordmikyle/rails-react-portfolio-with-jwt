@@ -7,7 +7,7 @@ class Api::MessagesController < ApplicationController
   end 
 
   def create
-    message = BlogPost.create(blog_post_params)
+    message = Message.create(message_params)
     if message.save
       render json: message, status: 200
     else
