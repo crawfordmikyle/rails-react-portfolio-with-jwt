@@ -4,19 +4,18 @@ import Login from './Login'
 import AdminHeading from '../components/admin/AdminHeading'
 import AdminPostsList from '../components/admin/AdminPostsList'
 import AdminProjectsList from '../components/admin/AdminProjectsList'
+import AdminMessageList from '../components/admin/AdminMessageList'
 import loginReducer from '../reducers/loginReducer'
 class MainAdmin extends Component{
-  componentDidMount(){
-    console.log()
-  } 
   render(){
-    // Temp auth rendering replace with something secure
-    if (1+1!==2) {
+    // TODO figure out more secure front end login method
+    if (this.props.login.isAuthenticated === true) {
       return(
         <div>
           <AdminHeading />
           <AdminProjectsList />
           <AdminPostsList/>
+          <AdminMessageList/>
         </div>
       )
     } else {

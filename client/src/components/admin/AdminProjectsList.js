@@ -1,5 +1,4 @@
 import React from 'react'
-import ProjectList from '../main/ProjectsList'
 
 const AdminProjectsList = () => {
   return(
