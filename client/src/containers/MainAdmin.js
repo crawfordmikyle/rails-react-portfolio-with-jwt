@@ -1,13 +1,17 @@
 import React, {Component} from 'react'
+import {connect} from 'react-redux'
 import Login from './Login'
 import AdminHeading from '../components/admin/AdminHeading'
 import AdminPostsList from '../components/admin/AdminPostsList'
 import AdminProjectsList from '../components/admin/AdminProjectsList'
+import loginReducer from '../reducers/loginReducer'
 class MainAdmin extends Component{
-  
+  componentDidMount(){
+    console.log()
+  } 
   render(){
     // Temp auth rendering replace with something secure
-    if (window.sessionStorage.length !== 0) {
+    if (1+1!==2) {
       return(
         <div>
           <AdminHeading />
@@ -26,4 +30,10 @@ class MainAdmin extends Component{
   }
 }
 
-export default MainAdmin
+const mapStateToProps = (state) => {
+  return{
+    login: state.loginReducer
+  }
+}
+
+export default connect(mapStateToProps)(MainAdmin)

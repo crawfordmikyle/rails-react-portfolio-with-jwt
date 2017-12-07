@@ -54,7 +54,6 @@ export function login(creds) {
           return Promise.reject(user)
 
         } else {
-          debugger
           // If login was successful, set the token in local storage
           localStorage.setItem('jwtToken', user.jwt)
           // Dispatch the success action
