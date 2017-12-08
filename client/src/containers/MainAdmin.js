@@ -5,7 +5,7 @@ import AdminHeading from '../components/admin/AdminHeading'
 import AdminPostsList from '../components/admin/AdminPostsList'
 import AdminProjectsList from '../components/admin/AdminProjectsList'
 import AdminMessageList from '../components/admin/AdminMessageList'
-import loginReducer from '../reducers/loginReducer'
+
 class MainAdmin extends Component{
   render(){
     // TODO figure out more secure front end login method
