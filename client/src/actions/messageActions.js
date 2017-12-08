@@ -12,7 +12,7 @@ const getMessages = (messages) => {
 export const getMessagesApi = () => {
 
   let config = {
-    method: 'POST',
+    method: 'GET',
     headers: {'Authorization': `Bearer ${window.localStorage.jwtToken}` },
   }
 
