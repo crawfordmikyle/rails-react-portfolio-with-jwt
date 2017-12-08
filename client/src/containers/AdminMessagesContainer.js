@@ -12,7 +12,7 @@ class AdminMessagesContainer extends Component {
   render(){
     return(
       <div className="AdminMessagesContainer">
-        <h4>Messages</h4>
+        <h2>Messages</h2>
         <AdminMessagesList messages={this.props.messages} />
       </div>
     )

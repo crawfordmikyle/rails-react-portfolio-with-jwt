@@ -11,7 +11,6 @@ const AdminProjectsList = ({projects}) => {
 
   return(
     <div>
-      <h2>Admin Projects List</h2>
       {renderedProjects}
     </div>
   )

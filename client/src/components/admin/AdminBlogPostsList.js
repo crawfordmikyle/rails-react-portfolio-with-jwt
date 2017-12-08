@@ -10,7 +10,6 @@ const AdminBlogPostsList = ({blogPosts}) => {
 
   return(
     <div>
-      <h2>Admin Posts List</h2>
       {renderedBlogPosts}
     </div>
   )

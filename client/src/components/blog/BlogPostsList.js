@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import BlogPostListCard from './BlogPostListCard'
-import Nav from '../Nav'
+
 const BlogPostList = ({blogPosts}) => {
 
 

@@ -1,9 +1,16 @@
 import React from 'react'
+import AdminMessageCard from './AdminMessageCard'
 
-const AdminMessagesList = () => {
+const AdminMessagesList = ({messages}) => {
+  const renderedMessages = messages.map((message)=>{
+    return(
+      <AdminMessageCard key={message.id} messageData={message} />
+    )
+  })
+
   return(
     <div>
-      <h2>Admin Message List</h2>
+      {renderedMessages}
     </div>
   )
 }

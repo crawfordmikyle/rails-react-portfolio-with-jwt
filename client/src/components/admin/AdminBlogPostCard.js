@@ -4,8 +4,7 @@ const AdminBlogPostCard = ({blogPostData}) => {
   return(
     <div className="AdminProjectCard">
       <h4>{blogPostData.title}</h4>
-      <p>{blogPostData.description}</p>
-      <a href="">GitHub</a>
+      <p>{blogPostData.body}</p>
     </div>
   )
 }
