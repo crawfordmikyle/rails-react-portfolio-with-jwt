@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {getProjectsApi} from '../actions/projectActions'
+import AdminProjectsList from '../components/admin/AdminProjectsList'
 
 class AdminProjectsContainer extends Component {
   
@@ -12,6 +13,7 @@ class AdminProjectsContainer extends Component {
     return(
       <div className="AdminProjectsContainer">
         <h4>Projects</h4>
+        <AdminProjectsList projects={this.props.projects}  />
       </div>
     )
   }
