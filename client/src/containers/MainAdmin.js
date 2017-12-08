@@ -15,7 +15,7 @@ class MainAdmin extends Component{
           <AdminHeading />
           <AdminProjectsContainer />
           <AdminMessagesContainer />
-          <AdminMessagesContainer />
+          <AdminBlogPostsContainer />
         </div>
       )
     } else {
