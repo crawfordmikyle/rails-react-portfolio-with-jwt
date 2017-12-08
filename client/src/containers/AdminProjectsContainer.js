@@ -13,7 +13,7 @@ class AdminProjectsContainer extends Component {
     return(
       <div className="AdminProjectsContainer">
         <h4>Projects</h4>
-        <AdminProjectsList projects={this.props.projects}  />
+        <AdminProjectsList projects={this.props.projects} />
       </div>
     )
   }
