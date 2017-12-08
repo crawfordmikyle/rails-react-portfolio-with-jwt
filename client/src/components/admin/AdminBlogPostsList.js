@@ -1,7 +1,6 @@
 import React from 'react'
-import BlogPostsList from '../blog/BlogPostsList'
 
-const AdminPostsList = () => {
+const AdminPostsList = ({blogPosts}) => {
   return(
     <div>
       <h2>Admin Posts List</h2>
