@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import {getProjectsApi} from '../actions/projectActions'
 
 class AdminProjectsContainer extends Component {
+  
   componentDidMount(){
     this.props.getProjectsApi()
   }
@@ -10,7 +11,7 @@ class AdminProjectsContainer extends Component {
   render(){
     return(
       <div className="AdminProjectsContainer">
-        
+
       </div>
     )
   }
@@ -18,7 +19,7 @@ class AdminProjectsContainer extends Component {
 
 const mapStateToProps = (state) => {
   return({
-    projects: state.projects
+    projects: state.projectsReducer
   })
 }
 

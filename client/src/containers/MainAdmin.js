@@ -2,9 +2,9 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Login from './Login'
 import AdminHeading from '../components/admin/AdminHeading'
-import AdminPostsList from '../components/admin/AdminPostsList'
-import AdminProjectsList from '../components/admin/AdminProjectsList'
-import AdminMessageList from '../components/admin/AdminMessageList'
+import AdminBlogPostsContainer from './AdminBlogPostsContainer'
+import AdminMessagesContainer from './AdminMessagesContainer'
+import AdminProjectsContainer from './AdminProjectsContainer'
 
 class MainAdmin extends Component{
   render(){
@@ -13,9 +13,9 @@ class MainAdmin extends Component{
       return(
         <div>
           <AdminHeading />
-          <AdminProjectsList />
-          <AdminPostsList/>
-          <AdminMessageList/>
+          <AdminProjectsContainer />
+          <AdminMessagesContainer />
+          <AdminMessagesContainer />
         </div>
       )
     } else {

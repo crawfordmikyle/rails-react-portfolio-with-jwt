@@ -10,6 +10,7 @@ const ProjectList = ({projects}) => {
       <ProjectListCard key={project.id} projectData={project}/>
     )
   })
+  
   console.log(renderedProjects)
   return(
     <div className='projects'>
