@@ -11,7 +11,7 @@ class AdminProjectsContainer extends Component {
   render(){
     return(
       <div className="AdminProjectsContainer">
-
+        <h4>Projects</h4>
       </div>
     )
   }
