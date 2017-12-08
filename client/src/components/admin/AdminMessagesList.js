@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AdminMessageList = () => {
+const AdminMessagesList = () => {
   return(
     <div>
       <h2>Admin Message List</h2>
@@ -8,4 +8,4 @@ const AdminMessageList = () => {
   )
 }
 
-export default AdminMessageList
+export default AdminMessagesList
