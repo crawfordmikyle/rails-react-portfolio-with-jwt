@@ -28,5 +28,12 @@ export const addProjectApi = (project) => {
   const config = {
     method: 'POST',
     headers: {'Authorization': `Bearer ${window.localStorage.jwtToken}` },
+    body: JSON.stringify(project)
+  }
+
+  return dispatch => {
+    return fetch('/api/projects',config)
+    .then(responce => responce.json())
+    .then(project => console.log(project))
   }
 }

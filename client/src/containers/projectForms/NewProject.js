@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import {connect} from 'react-redux'
+import {addProjectApi} from '../../actions/projectActions'
 
 class NewProject extends Component {
   constructor(){
@@ -19,6 +20,7 @@ class NewProject extends Component {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
+    this.props.addProjectApi(this.state)
   }
 
   render(){
@@ -46,4 +48,4 @@ const mapStateToProps = (state, ownProps) =>{
 
 }
 
-export default connect(null)(NewProject)
+export default connect(null,{addProjectApi})(NewProject)
