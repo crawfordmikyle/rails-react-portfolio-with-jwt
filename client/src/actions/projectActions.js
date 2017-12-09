@@ -6,6 +6,13 @@ const getProjects = (projects) => {
   })
 }
 
+const addProject = (project) => {
+  return({
+    type: "ADD_PROJECT",
+    project: project,
+  })
+}
+
 // Asynchronous Actions
 
 export const getProjectsApi = () => {
@@ -14,5 +21,12 @@ export const getProjectsApi = () => {
     .then(responce => responce.json())
     .then(projects => dispatch(getProjects(projects)))
     .catch(error => console.log(error))
+  }
+}
+
+export const addProjectApi = (project) => {
+  const config = {
+    method: 'POST',
+    headers: {'Authorization': `Bearer ${window.localStorage.jwtToken}` },
   }
 }
