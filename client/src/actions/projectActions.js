@@ -24,13 +24,16 @@ export const getProjectsApi = () => {
   }
 }
 
-export const addProjectApi = (project) => {
+export const addProjectApi = (projectObj) => {
   const config = {
     method: 'POST',
-    headers: {'Authorization': `Bearer ${window.localStorage.jwtToken}` },
-    body: JSON.stringify(project)
+    headers: {
+      'Authorization': `Bearer ${window.localStorage.jwtToken}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({project: projectObj}),
   }
-
+  console.log(config)
   return dispatch => {
     return fetch('/api/projects',config)
     .then(responce => responce.json())

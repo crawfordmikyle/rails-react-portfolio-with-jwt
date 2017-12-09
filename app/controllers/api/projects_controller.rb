@@ -6,6 +6,7 @@ class Api::ProjectsController < ApplicationController
   end 
 
   def create
+    binding.pry
     project = Project.create(project_params)
     if project.save
       render json: project, status: 200
