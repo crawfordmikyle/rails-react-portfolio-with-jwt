@@ -11,7 +11,6 @@ const ProjectList = ({projects}) => {
     )
   })
   
-  console.log(renderedProjects)
   return(
     <div className='projects'>
       <div className='heading'>

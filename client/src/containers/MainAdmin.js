@@ -5,7 +5,7 @@ import AdminHeading from '../components/admin/AdminHeading'
 import AdminBlogPostsContainer from './AdminBlogPostsContainer'
 import AdminMessagesContainer from './AdminMessagesContainer'
 import AdminProjectsContainer from './AdminProjectsContainer'
-
+import EditProject from './EditProject'
 class MainAdmin extends Component{
   render(){
     // TODO figure out more secure front end login method
@@ -16,6 +16,7 @@ class MainAdmin extends Component{
           <AdminProjectsContainer />
           <AdminMessagesContainer />
           <AdminBlogPostsContainer />
+          <EditProject />
         </div>
       )
     } else {
