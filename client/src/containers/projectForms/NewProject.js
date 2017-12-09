@@ -15,7 +15,12 @@ class NewProject extends Component {
     return(
       <div>
         <form>
-          <label>Title</label>
+          <label htmlFor="title">Title:</label>
+          <input type="text" id="title"/>
+          <label htmlFor="description">Description:</label>
+          <textarea name="description" id="description" cols="30" rows="10"></textarea>
+          <label htmlFor="github_url">GitHub Url:</label>
+          <input type="text" id="description"/>
         </form>
       </div>
     )
@@ -26,4 +31,4 @@ const mapStateToProps = (state, ownProps) =>{
 
 }
 
-export default connect(mapStateToProps)(NewProject)
+export default connect(null)(NewProject)
