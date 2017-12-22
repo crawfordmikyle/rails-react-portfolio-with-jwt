@@ -10,6 +10,7 @@ class ContactMe extends Component {
       email: '',
       message_text: '',
       phone: '',
+      sent: false,
     }
   }
 
@@ -22,35 +23,48 @@ class ContactMe extends Component {
   handleOnSubmit = (event) => {
     event.preventDefault();
     this.props.addMessageApi(this.state)
-    this.props.history.push('/')
+    this.setState({
+      name: '',
+      email: '',
+      message_text: '',
+      phone: '',
+      sent: true,
+    })
   }
 
   render(){
-    return(
-      <div className="contact">
-      
-        <div className='heading'>
-          <h4>Contact Me</h4>
+    if(this.state.sent === true){
+      return(
+        <div>
+          <h4>Message Sent</h4>
         </div>
-        <div className=''>
-          <form onSubmit={(event)=>this.handleOnSubmit(event)}>
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" value={this.state.names} onChange={(event)=>this.handleOnChange(event)}/>
+      )
+    } else {
+      return(
+        <div className="contact">
+          <div className='heading'>
+            <h4>Contact Me</h4>
+          </div>
+          <div className=''>
+            <form onSubmit={(event)=>this.handleOnSubmit(event)}>
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" value={this.state.name} onChange={(event)=>this.handleOnChange(event)}/>
 
-            <label htmlFor="email"> Email</label>
-            <input type="email" id="email" value={this.state.email} onChange={(event)=>this.handleOnChange(event)} />
+              <label htmlFor="email"> Email</label>
+              <input type="email" id="email" value={this.state.email} onChange={(event)=>this.handleOnChange(event)} />
 
-            <label htmlFor="message_text">Message</label>
-            <input type="text" id="message_text" value={this.state.message} onChange={(event)=>this.handleOnChange(event)} />
+              <label htmlFor="message_text">Message</label>
+              <input type="text" id="message_text" value={this.state.message_text} onChange={(event)=>this.handleOnChange(event)} />
             
-            <label htmlFor="phone"> Phone</label>
-            <input type="phone" id="phone" value={this.state.phone} onChange={(event)=>this.handleOnChange(event)} />
+              <label htmlFor="phone"> Phone</label>
+              <input type="phone" id="phone" value={this.state.phone} onChange={(event)=>this.handleOnChange(event)} />
 
-            <input type="submit"/>
-          </form>
+              <input type="submit"/>
+            </form>
+          </div>
         </div>
-      </div>
-    )
+      )
+    }
   }
 }
 
