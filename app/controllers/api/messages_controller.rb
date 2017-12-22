@@ -7,6 +7,7 @@ class Api::MessagesController < ApplicationController
   end 
 
   def create
+    #binding.pry
     message = Message.create(message_params)
     if message.save
       render json: message, status: 200
@@ -30,7 +31,7 @@ private
   end 
 
   def message_params
-    params.require(:message).permit(:sender_name, :sender_email, :sender_phone, :sender_messages)
+    params.require(:message).permit(:name, :email, :phone, :message_text)
   end
   
 end

@@ -1,14 +1,28 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import './contact.css'
+import {addMessageApi} from '../actions/messageActions'
+
 class ContactMe extends Component {
   constructor(){
     super();
     this.state = {
       name: '',
       email: '',
-      message: '',
+      message_text: '',
+      phone: '',
     }
+  }
+
+  handleOnChange = (event) => {
+    this.setState({
+      [event.target.id]:event.target.value
+    })
+  }
+
+  handleOnSubmit = (event) => {
+    event.preventDefault();
+    this.props.addMessageApi(this.state)
+    this.props.history.push('/')
   }
 
   render(){
@@ -19,16 +33,19 @@ class ContactMe extends Component {
           <h4>Contact Me</h4>
         </div>
         <div className=''>
-          <form>
-            <label htmlFor="Name">Name</label>
-            <input type="text" id="Name" />
+          <form onSubmit={(event)=>this.handleOnSubmit(event)}>
+            <label htmlFor="name">Name</label>
+            <input type="text" id="name" value={this.state.names} onChange={(event)=>this.handleOnChange(event)}/>
 
-            <label htmlFor="Email"> Email</label>
-            <input type="email" id="Email" />
+            <label htmlFor="email"> Email</label>
+            <input type="email" id="email" value={this.state.email} onChange={(event)=>this.handleOnChange(event)} />
 
-            <label htmlFor="Message">Message</label>
-            <input type="text" id="Message" />
-            <br/>
+            <label htmlFor="message_text">Message</label>
+            <input type="text" id="message_text" value={this.state.message} onChange={(event)=>this.handleOnChange(event)} />
+            
+            <label htmlFor="phone"> Phone</label>
+            <input type="phone" id="phone" value={this.state.phone} onChange={(event)=>this.handleOnChange(event)} />
+
             <input type="submit"/>
           </form>
         </div>
@@ -37,9 +54,5 @@ class ContactMe extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  
-}
-
-export default connect(null)(ContactMe)
+export default connect(null,{addMessageApi})(ContactMe)
 

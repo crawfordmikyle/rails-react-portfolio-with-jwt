@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20171119215802) do
   end
 
   create_table "messages", force: :cascade do |t|
-    t.string "sender_name"
-    t.string "sender_email"
-    t.string "sender_phone"
-    t.text "sender_messages"
+    t.string "name"
+    t.string "email"
+    t.string "phone"
+    t.text "message_text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
