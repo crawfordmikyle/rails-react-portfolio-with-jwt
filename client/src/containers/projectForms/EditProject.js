@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import {connect} from 'react-redux'
+import {editProjectApi} from '../../actions/projectActions'
 
 class EditProject extends Component {
   constructor({projectData}){
@@ -14,9 +15,15 @@ class EditProject extends Component {
   }
 
   handleOnChange = (event) => {
-    this.setStat({
+    this.setState({
       [event.target.id]:event.target.value
     })
+  }
+
+  handleOnSubmit = (event) => {
+    event.preventDefault();
+    this.props.editProjectApi(this.state)
+    this.props.history.push('/admin')
   }
 
   render(){
@@ -51,4 +58,4 @@ const mapStateToProps = (state, ownProps) =>{
   }
 }
 
-export default connect(mapStateToProps)(EditProject)
+export default connect(mapStateToProps,{editProjectApi})(EditProject)

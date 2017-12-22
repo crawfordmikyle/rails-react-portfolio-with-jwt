@@ -13,6 +13,13 @@ const addProject = (project) => {
   })
 }
 
+const editProject = (project) => {
+  return({
+    type: "EDIT_PROJECT",
+    project: project,
+  })
+}
+
 // Asynchronous Actions
 
 export const getProjectsApi = () => {
@@ -33,10 +40,27 @@ export const addProjectApi = (projectObj) => {
     },
     body: JSON.stringify({project: projectObj}),
   }
-  console.log(config)
   return dispatch => {
     return fetch('/api/projects',config)
     .then(responce => responce.json())
     .then(project => console.log(project))
+    .catch(error => console.log(error))
+  }
+}
+
+export const editProjectApi = (projectObj) => {
+  const config = {
+    method: 'PUT',
+    headers: {
+      'Authorization':`Bearer ${window.localStorage.jwtToken}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({project: projectObj}),
+  }
+  return dispatch => {
+    return fetch(`/api/projects/${projectObj.id}`,config)
+    .then(responce => responce.json())
+    .then(project => console.log(project))
+    .catch(error => console.log(error))
   }
 }

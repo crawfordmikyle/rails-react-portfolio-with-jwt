@@ -4,6 +4,14 @@ export default function projectReducer(state = [],action){
       return action.projects
     case 'ADD_PROJECT':
       return state.concat(action.project)
+    case 'EDIT_PROJECT':
+      return state.map((project)=>{
+        if(project.id === action.project.id){
+          return action.project
+        } else {
+          return project
+        }
+      })
     default:
       return state;
   }

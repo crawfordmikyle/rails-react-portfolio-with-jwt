@@ -29,9 +29,9 @@ ActiveRecord::Schema.define(version: 20171119215802) do
   end
 
   create_table "projects", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.string "github_url"
+    t.string "title", default: ""
+    t.text "description", default: ""
+    t.string "github_url", default: ""
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
