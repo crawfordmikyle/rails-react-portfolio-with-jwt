@@ -21,6 +21,7 @@ class NewProject extends Component {
   handleOnSubmit = (event) => {
     event.preventDefault();
     this.props.addProjectApi(this.state)
+    this.props.history.push('/admin')
   }
 
   render(){
@@ -42,10 +43,6 @@ class NewProject extends Component {
       </div>
     )
   }
-}
-
-const mapStateToProps = (state, ownProps) =>{
-
 }
 
 export default connect(null,{addProjectApi})(NewProject)

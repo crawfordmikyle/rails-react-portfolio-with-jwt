@@ -1,12 +1,12 @@
 class Api::ProjectsController < ApplicationController
   before_action :authenticate_user, except: [:index]
+
   def index
     projects = Project.all
     render json: projects, status: 200
   end 
 
   def create
-    binding.pry
     project = Project.create(project_params)
     if project.save
       render json: project, status: 200
@@ -43,4 +43,5 @@ class Api::ProjectsController < ApplicationController
   def project_params
     params.require(:project).permit(:title, :description)
   end
+  
 end
