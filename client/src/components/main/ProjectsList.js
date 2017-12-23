@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import ProjectListCard from './ProjectListCard'
-import './projects.css'
+
 const ProjectList = ({projects}) => {
 
 
