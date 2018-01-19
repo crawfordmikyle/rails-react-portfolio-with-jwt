@@ -5,11 +5,15 @@ import registerServiceWorker from './registerServiceWorker';
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-
+// Import Reducers
 import blogPostReducer from './reducers/blogPostReducer'
 import projectsReducer from './reducers/projectReducer'
 import messageReducer from './reducers/messageReducer'
 import loginReducer from './reducers/loginReducer'
+// Import CSS
+import './skeleton.css'
+import './normalize.css'
+// End Of Imports 
 
 const middleware = [thunk]
 
