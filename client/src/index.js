@@ -11,7 +11,9 @@ import projectsReducer from './reducers/projectReducer'
 import messageReducer from './reducers/messageReducer'
 import loginReducer from './reducers/loginReducer'
 // Import CSS
-
+import './normalize.css'
+import './skeleton.css'
+import './index.css'
 // End Of Imports 
 
 const middleware = [thunk]
