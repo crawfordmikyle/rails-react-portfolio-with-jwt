@@ -64,17 +64,23 @@ html body{
 
 /* Nav */
 
-nav{
-  background-color: rgb(31, 188, 211);
-}
-
 a{
   color: white;
   text-decoration: none;
-  display: block;
 }
 
-ul {
+ul{
   list-style-type: none;
+}
+
+li{
+
+}
+
+li a{
+  float: left;
   display: block;
+  background-color: rgb(31, 188, 211);
+  text-align: center;
+  padding: 14px 16px;
 }
