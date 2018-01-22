@@ -20,6 +20,14 @@ html body{
   width: 100%;
 }
 
+.sectionHeading{
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.aboutContent{
+
+}
 /* ID */
 
 #landingName{
@@ -52,4 +60,21 @@ html body{
   margin-bottom: -3em;
   background: rgba(255, 255, 255, .4);
   box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+}
+
+/* Nav */
+
+nav{
+  background-color: rgb(31, 188, 211);
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  display: block;
 }
