@@ -3,14 +3,17 @@ import React from 'react'
 const Landing = () => {
   return(
     <div className="landing">
-      <div className="imgDiv">
-        <img id="headshot" src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/18402888_10211333915857890_5938430278944942552_n.jpg?oh=a7ab968a7a1820d6578fe3af22b987f3&oe=5A77831F"/>
-      </div>
-      <div className="textDiv">
-        <h1 id="name">Mikyle A. Crawford</h1>
+
+      <section className="headshot">
+        <img id="headshot" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/18402888_10211333915857890_5938430278944942552_n.jpg?oh=c15afa314fc219e67e5ccbc630a98a31&oe=5AEE2A1F"/>  
+      </section>
+      
+      <section className="textDiv">
+        <h1 id="landingName">Mikyle A. Crawford</h1>
         <br/>
         <h3 id="title">Full Stack Developer</h3>
-      </div>
+      </section>
+
     </div>
   )
 }
