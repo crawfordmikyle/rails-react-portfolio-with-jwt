@@ -12,9 +12,9 @@ const ProjectList = ({projects}) => {
   })
   
   return(
-    <div className='projects'>
-      <div className='sectionHeading'>
-        <h4>Projects</h4>
+    <div className='projects row'>
+      <div className='twelve columns '>
+        <h4 className='sectionHeading'>Projects</h4>
       </div>
       <div>
         {renderedProjects}

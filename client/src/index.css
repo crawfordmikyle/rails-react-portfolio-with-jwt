@@ -24,6 +24,7 @@ html body{
 .sectionHeading{
   font-size: 3.6rem;
   text-align: center;
+  padding-top: 20px;
 }
 
 .aboutContent{
@@ -90,3 +91,6 @@ li a{
 .nav{
   background-color: rgb(31, 188, 211);
 }
+/*Form*/
+
+/*Project Cards*/

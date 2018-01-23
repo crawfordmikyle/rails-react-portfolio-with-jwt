@@ -13,7 +13,6 @@ const Landing = () => {
         <br/>
         <h3 id="title">Full Stack Developer</h3>
         <br/>
-        
       </section>
 
     </div>

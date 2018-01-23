@@ -41,11 +41,11 @@ class ContactMe extends Component {
       )
     } else {
       return(
-        <div className="contact container">
+        <div className="contact container row">
           <div className='heading'>
-            <h4>Contact Me</h4>
+            <h4 className='sectionHeading'>Contact Me</h4>
           </div>
-          <div className=''>
+          <div className='four columns offset-by-four'>
             <form onSubmit={(event)=>this.handleOnSubmit(event)}>
               <label htmlFor="name">Name</label>
               <input type="text" id="name" value={this.state.name} onChange={(event)=>this.handleOnChange(event)}/>
