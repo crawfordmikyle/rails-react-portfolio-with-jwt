@@ -10,7 +10,7 @@ class ProjectsContainer extends Component {
 
   render(){
     return(
-      <div className="Projects">
+      <div className="Projects container">
         <ProjectsList/>
       </div>
     )

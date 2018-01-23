@@ -13,7 +13,7 @@ const ProjectList = ({projects}) => {
   
   return(
     <div className='projects'>
-      <div className='heading'>
+      <div className='sectionHeading'>
         <h4>Projects</h4>
       </div>
       <div>

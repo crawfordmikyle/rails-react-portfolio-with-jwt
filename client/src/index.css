@@ -8,6 +8,7 @@ html body{
 .landing{
   width: 100vw;
   height: 100vh;
+  min-height: 550px;
   background-size:cover;
   background-position:center;
   justify-content:center;
@@ -71,10 +72,11 @@ a{
 
 ul{
   list-style-type: none;
+  margin: 0px 0px 0px 0px;
 }
 
 li{
-
+  margin: 0px 0px 0px 0px;
 }
 
 li a{
@@ -83,4 +85,8 @@ li a{
   background-color: rgb(31, 188, 211);
   text-align: center;
   padding: 14px 16px;
+}
+
+.nav{
+  background-color: rgb(31, 188, 211);
 }

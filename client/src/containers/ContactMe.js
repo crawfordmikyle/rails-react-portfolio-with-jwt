@@ -35,13 +35,13 @@ class ContactMe extends Component {
   render(){
     if(this.state.sent === true){
       return(
-        <div>
+        <div className="container">
           <h4>Message Sent</h4>
         </div>
       )
     } else {
       return(
-        <div className="contact">
+        <div className="contact container">
           <div className='heading'>
             <h4>Contact Me</h4>
           </div>
@@ -57,8 +57,8 @@ class ContactMe extends Component {
               <input type="text" id="message_text" value={this.state.message_text} onChange={(event)=>this.handleOnChange(event)} />
             
               <label htmlFor="phone"> Phone</label>
-              <input type="phone" id="phone" value={this.state.phone} onChange={(event)=>this.handleOnChange(event)} />
-
+              <input type="number" id="phone" value={this.state.phone} onChange={(event)=>this.handleOnChange(event)} />
+              <br/>
               <input type="submit"/>
             </form>
           </div>
