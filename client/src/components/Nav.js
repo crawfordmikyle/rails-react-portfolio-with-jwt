@@ -31,7 +31,7 @@ class Nav extends Component {
       })
     }
   };
-// this is so not dry figure out somthing better
+// not to self this is so not dry figure out somthing better
   render(){
     if(this.state.fixed === true){
       return(
