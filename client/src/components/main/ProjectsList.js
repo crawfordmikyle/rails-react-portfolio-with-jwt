@@ -16,7 +16,7 @@ const ProjectList = ({projects}) => {
       <div className='twelve columns '>
         <h4 className='sectionHeading'>Projects</h4>
       </div>
-      <div>
+      <div className='twelve columns projectGrid'>
         {renderedProjects}
       </div>
     </div>
