@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 import About from './main/About'
 
 class Nav extends Component {
@@ -31,7 +30,7 @@ class Nav extends Component {
       })
     }
   };
-// not to self this is so not dry figure out somthing better
+// note to self this is so not dry figure out somthing better
   render(){
     if(this.state.fixed === true){
       return(
