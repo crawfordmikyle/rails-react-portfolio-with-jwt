@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return(
-    <div className="about container section">
+    <div className="about container section" id='about'>
       <h4 className='sectionHeading'>About Me</h4>
       <div className="aboutContent">
         <p>
@@ -12,6 +12,10 @@ const About = () => {
           businesses in attaining their short and long term goals.
         </p>
         <h5 className='subHeading'>Skills</h5>
+        <div className='skills'>
+          <div className='skillCard'>
+          </div>
+        </div>
       </div>
     </div>
   )

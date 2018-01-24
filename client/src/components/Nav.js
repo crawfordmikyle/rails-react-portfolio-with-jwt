@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import About from './main/About'
+import Scrollchor from 'react-scrollchor';
 
 class Nav extends Component {
   
   constructor(){
     super();
     this.state = {
-      breakpoint: 500,
+      breakpoint: 550,
       fixed: false,
     }
 
@@ -17,8 +17,10 @@ class Nav extends Component {
 
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
+    const aboutInfo = document.getElementById('about').getBoundingClientRect();
+    this.setState({breakpoint: aboutInfo.height})
   };
-
+  
   handleScroll(e) {
     if (window.scrollY > 500){
       this.setState({
@@ -30,6 +32,7 @@ class Nav extends Component {
       })
     }
   };
+
 // note to self this is so not dry figure out somthing better
   render(){
     if(this.state.fixed === true){
@@ -38,9 +41,9 @@ class Nav extends Component {
         <nav>
          <ul className="nav ul">
           <li><Link to="/">Home</Link></li>
-          <li><Link key="about" to="/#about">About</Link></li>
+          <li><Scrollchor to="#about" animate={{offset:-80}}>About</Scrollchor></li>
           <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/">Contact</Link></li>
+          <li><Scrollchor to="#contact" animate={{offset:-70}}>Contact</Scrollchor></li>
           <li><Link to="/admin">Login</Link></li>
          </ul>
         </nav>
@@ -52,9 +55,9 @@ class Nav extends Component {
         <nav>
          <ul className="nav ul">
           <li><Link to="/">Home</Link></li>
-          <li><Link key="about" to="/#about">About</Link></li>
+          <li><Scrollchor to="#about" animate={{offset:-80}}>About</Scrollchor></li>
           <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/">Contact</Link></li>
+          <li><Scrollchor to="#contact" animate={{offset:-70}}>Contact Me</Scrollchor></li>
           <li><Link to="/admin">Login</Link></li>
          </ul>
         </nav>

@@ -41,7 +41,7 @@ class ContactMe extends Component {
       )
     } else {
       return(
-        <div className="contact container row section">
+        <div className="contact container row section" id='contact'>
           <div className='heading'>
             <h4 className='sectionHeading'>Contact Me</h4>
           </div>
