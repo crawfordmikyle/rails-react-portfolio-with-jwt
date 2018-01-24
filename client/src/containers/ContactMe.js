@@ -12,13 +12,13 @@ class ContactMe extends Component {
       phone: '',
       sent: false,
     }
-  }
+  };
 
   handleOnChange = (event) => {
     this.setState({
       [event.target.id]:event.target.value
     })
-  }
+  };
 
   handleOnSubmit = (event) => {
     event.preventDefault();
@@ -30,7 +30,7 @@ class ContactMe extends Component {
       phone: '',
       sent: true,
     })
-  }
+  };
 
   render(){
     if(this.state.sent === true){
@@ -66,7 +66,7 @@ class ContactMe extends Component {
       )
     }
   }
-}
+};
 
-export default connect(null,{addMessageApi})(ContactMe)
+export default connect(null,{addMessageApi})(ContactMe);
 

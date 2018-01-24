@@ -7,17 +7,17 @@ class BlogPostsContainer extends Component {
   
   componentDidMount(){
     this.props.getBlogPostsApi()
-  }
+  };
 
   render(){
     return(
       <BlogPostsList/>
     )
   }
-}
+};
 
 const mapStateToProps = (state) => {
   return {blogPosts: state.blogPostReducer}
-}
+};
 
-export default connect(mapStateToProps,{getBlogPostsApi})(BlogPostsContainer)
+export default connect(mapStateToProps,{getBlogPostsApi})(BlogPostsContainer);
