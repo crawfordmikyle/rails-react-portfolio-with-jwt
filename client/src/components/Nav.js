@@ -9,26 +9,46 @@ class Nav extends Component {
     super();
     this.state = {
       breakpoint: 500,
-      fixed: false
+      fixed: false,
     }
 
     this.handleScroll = this.handleScroll.bind(this);
 
-  }
+  };
 
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
-  }
+  };
 
   handleScroll(e) {
-    console.log(window.scrollY)
-    return this.setState({
-      fixed: (window.scrollY > this.breakpoint) ? true : false
-    });
-  }
-
+    if (window.scrollY > 500){
+      this.setState({
+        fixed: true
+      })
+    } else {
+      this.setState({
+        fixed: false
+      })
+    }
+  };
+// this is so not dry figure out somthing better
   render(){
-    return(
+    if(this.state.fixed === true){
+      return(
+      <div className="full-width-container nav sticky">
+        <nav>
+         <ul className="nav ul">
+          <li><Link to="/">Home</Link></li>
+          <li><Link key="about" to="/#about">About</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/">Contact</Link></li>
+          <li><Link to="/admin">Login</Link></li>
+         </ul>
+        </nav>
+      </div>
+      )
+    } else {
+      return(
       <div className="full-width-container nav">
         <nav>
          <ul className="nav ul">
@@ -40,8 +60,9 @@ class Nav extends Component {
          </ul>
         </nav>
       </div>
-    )
+      )
+    }
   }
-}
+};
 
-export default Nav
+export default Nav;
