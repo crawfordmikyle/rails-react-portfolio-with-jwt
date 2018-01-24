@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return(
-    <div className="about container">
+    <div className="about container section">
       <h4 className='sectionHeading'>About Me</h4>
       <div className="aboutContent">
         <p>
@@ -11,7 +11,8 @@ const About = () => {
           usiness and building Wordpress sites. I bring strong skills in problem solving and systematic improvement to support 
           businesses in attaining their short and long term goals.
         </p>
-        </div>
+        <h5 className='subHeading'>Skills</h5>
+      </div>
     </div>
   )
 }

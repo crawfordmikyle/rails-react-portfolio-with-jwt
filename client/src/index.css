@@ -5,6 +5,13 @@ html body{
 
 /* Class */
 
+.full-width-container {
+width: 100%;
+max-width: 100%;
+clear: both;
+margin: 0 auto;
+}
+
 .landing{
   width: 100vw;
   height: 100vh;
@@ -27,8 +34,19 @@ html body{
   padding-top: 20px;
 }
 
-.aboutContent{
+.subHeading{
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 20px;
+}
 
+.section{
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.about{
+  clear: both;
 }
 /* ID */
 
@@ -64,6 +82,11 @@ html body{
   box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
 }
 
+#footer{
+  background-color: rgb(38, 42, 48);
+  height: 10vh;
+}
+
 /* Nav */
 
 a{
@@ -89,6 +112,9 @@ li a{
 }
 
 .nav{
+  width: 100vw;
+  height: 55px;
+  margin-left: 0px;
   background-color: rgb(31, 188, 211);
 }
 /*Form*/

@@ -4,6 +4,8 @@ import Landing from '../components/main/Landing'
 import Nav from '../components/Nav'
 import ProjectsContainer from './ProjectsContainer'
 import ContactMe from './ContactMe'
+import Footer from '../components/main/Footer'
+
 class MainPage extends Component{
 
   render(){
@@ -14,9 +16,10 @@ class MainPage extends Component{
         <About />
         <ProjectsContainer />
         <ContactMe />
+        <Footer />
       </div>
     )
   }
-}
+};
 
-export default MainPage
+export default MainPage;
