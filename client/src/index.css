@@ -118,6 +118,13 @@ li a{
   margin-left: 0px;
   background-color: rgb(31, 188, 211);
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+}
 /*Form*/
 
 /*Project Cards*/
