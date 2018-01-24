@@ -6,7 +6,7 @@ const AdminProjectCard = ({projectData}) => {
       <h4>{projectData.title}</h4>
       <p>{projectData.description}</p>
       <a href="">GitHub</a>
-      <Link to={`/admin/projects/${projectData.id}`}>Edit</Link>
+      <Link className='projectLink' to={`/admin/projects/${projectData.id}`}>Edit</Link>
     </div>
   )
 }

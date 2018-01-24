@@ -12,23 +12,23 @@ class EditProject extends Component {
       description: projectData.description,
       github_url: projectData.github_url
     }
-  }
+  };
 
   handleOnChange = (event) => {
     this.setState({
       [event.target.id]:event.target.value
     })
-  }
+  };
 
   handleOnSubmit = (event) => {
     event.preventDefault();
     this.props.editProjectApi(this.state)
     this.props.history.push('/admin')
-  }
+  };
 
   render(){
     return(
-      <div>
+      <div className='container'>
         <form onSubmit={(event)=>this.handleOnSubmit(event)}>
           <label htmlFor="title">Title:</label>
           <input type="text" id="title" value={this.state.title} onChange={(event)=>this.handleOnChange(event)}/>
@@ -45,7 +45,7 @@ class EditProject extends Component {
       </div>
     )
   }
-}
+};
 
 const mapStateToProps = (state, ownProps) =>{
   const projectData = state.projectsReducer.find((project)=>(project.id.toString() === ownProps.match.params.id))
