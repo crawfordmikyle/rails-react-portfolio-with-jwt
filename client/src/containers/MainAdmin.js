@@ -11,7 +11,7 @@ class MainAdmin extends Component{
     // TODO figure out more secure front end login method
     if (this.props.login.isAuthenticated === true) {
       return(
-        <div>
+        <div className='container'>
           <AdminHeading />
           <AdminProjectsContainer />
           <AdminMessagesContainer />
@@ -20,7 +20,7 @@ class MainAdmin extends Component{
       )
     } else {
       return(
-        <div>
+        <div className='container'>
           <AdminHeading />
           <Login />
         </div>

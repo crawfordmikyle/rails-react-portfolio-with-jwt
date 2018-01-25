@@ -2,8 +2,8 @@ import React from 'react'
 
 const AdminHeading = () => {
 	return(
-	 <div className="AdminHeading">
-     <h1>Admin Page</h1>
+	 <div className="adminHeadingDiv">
+     <h1 className='adminHeading'>Admin Page</h1>
    </div>
 	)
 }

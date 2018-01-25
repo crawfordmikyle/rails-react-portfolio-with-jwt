@@ -26,7 +26,7 @@ class Login extends Component {
 
   render(){
     return(
-      <div>
+      <div className='row'>
         <form onSubmit={(event) => this.handleOnSubmit(event)}>
           <label htmlFor="email">Email</label>
           <input type="email" id="email" value={this.state.email} onChange={(event) => this.handleOnChange(event)}/>
