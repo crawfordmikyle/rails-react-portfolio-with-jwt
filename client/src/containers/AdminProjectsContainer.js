@@ -12,7 +12,7 @@ class AdminProjectsContainer extends Component {
 
   render(){
     return(
-      <div className="AdminProjectsContainer">
+      <div className="AdminProjectsContainer container">
         <h2 className='sectionHeading'>Projects</h2>
         <AdminProjectsList projects={this.props.projects} />
         <Link to={"/admin/projects/new"} className='button'>New Project</Link>

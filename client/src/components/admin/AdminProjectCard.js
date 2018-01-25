@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const AdminProjectCard = ({projectData}) => {
   return(
-    <div className="adminProjectCard">
+    <div className="adminCard">
       <h4>{projectData.title}</h4>
       <p>{projectData.description}</p>
       <a className='projectLink' href={projectData.github_url}>GitHub</a>

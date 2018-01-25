@@ -9,7 +9,7 @@ const AdminBlogPostsList = ({blogPosts}) => {
   })
 
   return(
-    <div>
+    <div className='row adminGrid'>
       {renderedBlogPosts}
     </div>
   )

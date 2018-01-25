@@ -11,7 +11,7 @@ class AdminMessagesContainer extends Component {
 
   render(){
     return(
-      <div className="AdminMessagesContainer">
+      <div className="AdminMessagesContainer container">
         <h4 className='sectionHeading'>Messages</h4>
         <AdminMessagesList messages={this.props.messages} />
       </div>
