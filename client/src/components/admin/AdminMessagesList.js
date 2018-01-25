@@ -9,7 +9,7 @@ const AdminMessagesList = ({messages}) => {
   })
 
   return(
-    <div>
+    <div className='adminGrid'>
       {renderedMessages}
     </div>
   )
