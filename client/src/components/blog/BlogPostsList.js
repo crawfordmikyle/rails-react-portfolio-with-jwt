@@ -1,6 +1,6 @@
-import React from 'react'
-import {connect} from 'react-redux'
-import BlogPostListCard from './BlogPostListCard'
+import React from 'react';
+import {connect} from 'react-redux';
+import BlogPostListCard from './BlogPostListCard';
 
 const BlogPostList = ({blogPosts}) => {
 
@@ -19,10 +19,10 @@ const BlogPostList = ({blogPosts}) => {
       </div>
     </div>
   )
-}
+};
 
 const mapStateToProps = (state) => {
   return {blogPosts: state.blogPostReducer}
-}
+};
 
-export default connect(mapStateToProps)(BlogPostList)
+export default connect(mapStateToProps)(BlogPostList);

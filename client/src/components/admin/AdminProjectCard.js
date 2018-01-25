@@ -1,5 +1,5 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 // external link does not work 
 
@@ -13,6 +13,6 @@ const AdminProjectCard = ({projectData}) => {
       <Link className='projectLink' to={`/admin/projects/${projectData.id}`}>Edit</Link>
     </div>
   )
-}
+};
 
-export default AdminProjectCard
+export default AdminProjectCard;

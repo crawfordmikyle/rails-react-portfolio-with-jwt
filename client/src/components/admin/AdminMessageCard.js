@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const AdminMessageCard = ({messageData}) => {
   return(
@@ -9,9 +9,6 @@ const AdminMessageCard = ({messageData}) => {
       <p>{messageData.messages_text}</p>
     </div>
   )
-}
+};
 
-export default AdminMessageCard
-
-
-//{id: 1, sender_name: "Test Sender One", sender_email: "test@test.com", sender_phone: "206-222-2222", sender_messages: "test message content", …}
+export default AdminMessageCard;

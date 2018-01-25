@@ -15,4 +15,4 @@ export default function projectReducer(state = [],action){
     default:
       return state;
   }
-}
+};

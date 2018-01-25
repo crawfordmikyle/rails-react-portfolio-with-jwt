@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const AdminBlogPostCard = ({blogPostData}) => {
   return(
@@ -7,6 +7,6 @@ const AdminBlogPostCard = ({blogPostData}) => {
       <p>{blogPostData.body}</p>
     </div>
   )
-}
+};
 
-export default AdminBlogPostCard
+export default AdminBlogPostCard;

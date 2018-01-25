@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const BlogHeadng = () => {
   return(
@@ -6,6 +6,6 @@ const BlogHeadng = () => {
       <h1>Back 2 Blocks</h1>
     </div>
   )
-}
+};
 
 export default BlogHeadng;

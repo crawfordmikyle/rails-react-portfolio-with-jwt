@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const AdminHeading = () => {
 	return(
@@ -6,6 +6,6 @@ const AdminHeading = () => {
      <h1 className='adminHeading'>Admin Page</h1>
    </div>
 	)
-}
+};
 
-export default AdminHeading
+export default AdminHeading;

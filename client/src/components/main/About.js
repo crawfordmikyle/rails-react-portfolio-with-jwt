@@ -1,17 +1,20 @@
-import React from 'react'
+import React from 'react';
 //import skill card logos
-import htmlLogo from '../../media/html.svg'
-import cssLogo from '../../media/css.svg'
-import rubyLogo from '../../media/ruby.svg'
-import javaScriptLogo from '../../media/javascript.svg'
-import railsLogo from '../../media/rails.svg'
-import reactLogo from '../../media/react.svg'
+import htmlLogo from '../../media/html.svg';
+import cssLogo from '../../media/css.svg';
+import rubyLogo from '../../media/ruby.svg';
+import javaScriptLogo from '../../media/javascript.svg';
+import railsLogo from '../../media/rails.svg';
+import reactLogo from '../../media/react.svg';
 
 const About = () => {
   return(
     <div className="about container section" id='about'>
+
       <h4 className='sectionHeading'>About Me</h4>
+
       <div className="aboutContent">
+      
         <p>
           Full stack developer with a passion for learning. With experience in Ruby on Rails and JavaScript based programming 
           and a background in Computer Repair and Information Technology, I discovered web development through running my own IT 
@@ -48,6 +51,6 @@ const About = () => {
       </div>
     </div>
   )
-}
+};
 
-export default About
+export default About;

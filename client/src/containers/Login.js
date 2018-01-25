@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import {login} from '../actions/loginActions'
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {login} from '../actions/loginActions';
 
 class Login extends Component {
   constructor(){
@@ -39,6 +39,6 @@ class Login extends Component {
       </div>
     )
   }
-}
+};
 
-export default connect(null,{login})(Login)
+export default connect(null,{login})(Login);

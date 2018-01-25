@@ -1,6 +1,6 @@
-import React from 'react'
-import {connect} from 'react-redux'
-import ProjectListCard from './ProjectListCard'
+import React from 'react';
+import {connect} from 'react-redux';
+import ProjectListCard from './ProjectListCard';
 
 const ProjectList = ({projects}) => {
 
@@ -21,10 +21,10 @@ const ProjectList = ({projects}) => {
       </div>
     </div>
   )
-}
+};
 
 const mapStateToProps = (state) => {
   return {projects: state.projectsReducer}
-}
+};
 
-export default connect(mapStateToProps)(ProjectList)
+export default connect(mapStateToProps)(ProjectList);

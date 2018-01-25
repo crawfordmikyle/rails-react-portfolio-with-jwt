@@ -1,5 +1,5 @@
-import React from 'react'
-import AdminMessageCard from './AdminMessageCard'
+import React from 'react';
+import AdminMessageCard from './AdminMessageCard';
 
 const AdminMessagesList = ({messages}) => {
   const renderedMessages = messages.map((message)=>{
@@ -13,6 +13,6 @@ const AdminMessagesList = ({messages}) => {
       {renderedMessages}
     </div>
   )
-}
+};
 
-export default AdminMessagesList
+export default AdminMessagesList;

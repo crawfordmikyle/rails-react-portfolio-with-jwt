@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import {addMessageApi} from '../actions/messageActions'
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {addMessageApi} from '../actions/messageActions';
 
 class ContactMe extends Component {
   constructor(){

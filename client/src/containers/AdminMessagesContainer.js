@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import {getMessagesApi} from '../actions/messageActions'
-import AdminMessagesList from '../components/admin/AdminMessagesList'
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {getMessagesApi} from '../actions/messageActions';
+import AdminMessagesList from '../components/admin/AdminMessagesList';
 
 class AdminMessagesContainer extends Component {
   
@@ -12,17 +12,17 @@ class AdminMessagesContainer extends Component {
   render(){
     return(
       <div className="AdminMessagesContainer">
-        <h2>Messages</h2>
+        <h4 className='sectionHeading'>Messages</h4>
         <AdminMessagesList messages={this.props.messages} />
       </div>
     )
   }
-}
+};
 
 const mapStateToProps = (state) => {
   return({
     messages: state.messageReducer
   })
-}
+};
 
-export default connect(mapStateToProps,{getMessagesApi})(AdminMessagesContainer)
+export default connect(mapStateToProps,{getMessagesApi})(AdminMessagesContainer);

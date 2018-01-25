@@ -1,10 +1,10 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import Login from './Login'
-import AdminHeading from '../components/admin/AdminHeading'
-import AdminBlogPostsContainer from './AdminBlogPostsContainer'
-import AdminMessagesContainer from './AdminMessagesContainer'
-import AdminProjectsContainer from './AdminProjectsContainer'
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import Login from './Login';
+import AdminHeading from '../components/admin/AdminHeading';
+import AdminBlogPostsContainer from './AdminBlogPostsContainer';
+import AdminMessagesContainer from './AdminMessagesContainer';
+import AdminProjectsContainer from './AdminProjectsContainer';
 
 class MainAdmin extends Component{
   render(){
@@ -27,12 +27,12 @@ class MainAdmin extends Component{
       )
     }
   }
-}
+};
 
 const mapStateToProps = (state) => {
   return{
     login: state.loginReducer
   }
-}
+};
 
-export default connect(mapStateToProps)(MainAdmin)
+export default connect(mapStateToProps)(MainAdmin);

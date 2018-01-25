@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import {getBlogPostsApi} from '../actions/blogPostActions'
-import AdminBlogPostsList from '../components/admin/AdminBlogPostsList'
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {getBlogPostsApi} from '../actions/blogPostActions';
+import AdminBlogPostsList from '../components/admin/AdminBlogPostsList';
 
 class AdminBlogPostsContainer extends Component {
 
@@ -17,12 +17,12 @@ class AdminBlogPostsContainer extends Component {
       </div>
     )
   }
-}
+};
 
 const mapStateToProps = (state) => {
   return({
     blogPosts: state.blogPostReducer
   })
-}
+};
 
-export default connect(mapStateToProps,{getBlogPostsApi})(AdminBlogPostsContainer)
+export default connect(mapStateToProps,{getBlogPostsApi})(AdminBlogPostsContainer);

@@ -1,5 +1,5 @@
-import React from 'react'
-import projectImg from '../../media/projectImg.jpeg'
+import React from 'react';
+import projectImg from '../../media/projectImg.jpeg';
 
 const BlogPostListCard = ({projectData}) => {
   return(
@@ -10,6 +10,6 @@ const BlogPostListCard = ({projectData}) => {
       <a className='projectLink' href="">GitHub Link</a>
     </div>
   )
-}
+};
 
-export default BlogPostListCard
+export default BlogPostListCard;

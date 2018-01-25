@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import MainPage from './MainPage'
-import MainAdmin from './MainAdmin'
-import MainBlog from './MainBlog'
-import EditProject from './projectForms/EditProject'
-import NewProject from './projectForms/NewProject'
+import MainPage from './MainPage';
+import MainAdmin from './MainAdmin';
+import MainBlog from './MainBlog';
+import EditProject from './projectForms/EditProject';
+import NewProject from './projectForms/NewProject';
 
 class App extends Component{
   render(){

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const BlogPostListCard = ({bpData}) => {
   return(
@@ -7,6 +7,6 @@ const BlogPostListCard = ({bpData}) => {
       <p>{bpData.body}</p>
     </div>
   )
-}
+};
 
-export default BlogPostListCard
+export default BlogPostListCard;

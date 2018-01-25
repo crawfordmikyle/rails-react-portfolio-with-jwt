@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import {getProjectsApi} from '../actions/projectActions'
-import AdminProjectsList from '../components/admin/AdminProjectsList'
-import {Link} from 'react-router-dom'
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {getProjectsApi} from '../actions/projectActions';
+import AdminProjectsList from '../components/admin/AdminProjectsList';
+import {Link} from 'react-router-dom';
 
 class AdminProjectsContainer extends Component {
   
@@ -15,16 +15,16 @@ class AdminProjectsContainer extends Component {
       <div className="AdminProjectsContainer">
         <h2 className='sectionHeading'>Projects</h2>
         <AdminProjectsList projects={this.props.projects} />
-        <Link to={"/admin/projects/new"}>New Project</Link>
+        <Link to={"/admin/projects/new"} className='button'>New Project</Link>
       </div>
     )
   }
-}
+};
 
 const mapStateToProps = (state) => {
   return({
     projects: state.projectsReducer
   })
-}
+};
 
-export default connect(mapStateToProps,{getProjectsApi})(AdminProjectsContainer)
+export default connect(mapStateToProps,{getProjectsApi})(AdminProjectsContainer);

@@ -1,5 +1,5 @@
-import React from 'react'
-import AdminBlogPostCard from './AdminBlogPostCard'
+import React from 'react';
+import AdminBlogPostCard from './AdminBlogPostCard';
 
 const AdminBlogPostsList = ({blogPosts}) => {
   const renderedBlogPosts = blogPosts.map((blogPost)=>{
@@ -13,6 +13,6 @@ const AdminBlogPostsList = ({blogPosts}) => {
       {renderedBlogPosts}
     </div>
   )
-}
+};
 
-export default AdminBlogPostsList
+export default AdminBlogPostsList;

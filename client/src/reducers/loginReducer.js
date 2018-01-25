@@ -30,4 +30,4 @@ export default function loginReducer(state = {
     default:
       return state
   }
-}
+};
