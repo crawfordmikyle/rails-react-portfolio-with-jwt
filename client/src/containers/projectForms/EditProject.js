@@ -20,16 +20,22 @@ class EditProject extends Component {
     })
   };
 
-  handleOnSubmit = (event) => {
+  updateProject = (event) => {
     event.preventDefault();
     this.props.editProjectApi(this.state)
     this.props.history.push('/admin')
   };
-
+  
+  deleteProject = (event) => {
+    event.preventDefault();
+    this.props.deleteProjectApi(this.state)
+    this.props.history.push('/admin')
+  };
+  
   render(){
     return(
       <div className='container'>
-        <form onSubmit={(event)=>this.handleOnSubmit(event)}>
+        <form onSubmit={event => this.updateProject(event)}>
           <label htmlFor="title">Title:</label>
           <input type="text" id="title" value={this.state.title} onChange={(event)=>this.handleOnChange(event)}/>
           <br/>
@@ -40,7 +46,10 @@ class EditProject extends Component {
           <label htmlFor="github_url">GitHub Url:</label>
           <input type="text" id="github_url" value={this.state.github_url} onChange={(event)=>this.handleOnChange(event)}/>
           <br/>
-          <input type="submit"/>
+          <input type="submit" value='Update Project'/>
+        </form>
+        <form onSubmit={event => this.deleteProject(event)}>
+          <input type="submit" value='Delete Project'/>
         </form>
       </div>
     )
