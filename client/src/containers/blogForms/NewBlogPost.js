@@ -11,4 +11,4 @@ class NewBlogPost extends Component {
   }
 };
 
-export default NewBlogPost;
+export default connect(null)(NewBlogPost);

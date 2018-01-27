@@ -6,10 +6,10 @@ html body{
 /* Class */
 
 .full-width-container {
-width: 100%;
-max-width: 100%;
-clear: both;
-margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+  margin: 0 auto;
 }
 
 .landing{
@@ -132,7 +132,9 @@ li a{
   width: 100%;
   z-index:1;
 }
+
 /* Form */
+
 input {
   width: 100%
 }
@@ -140,6 +142,7 @@ input {
 textarea {
   width: 100%;
 }
+
 /* Project Cards */
 
 .projectGrid{

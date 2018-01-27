@@ -11,4 +11,4 @@ class EditBlogPost extends Component {
   }
 };
 
-export default EditBlogPost;
+export default connect(null)(EditBlogPost);
