@@ -43,7 +43,7 @@ export const addProjectApi = (projectObj) => {
   return dispatch => {
     return fetch('/api/projects',config)
     .then(responce => responce.json())
-    .then(project => console.log(project))
+    .then(project => dispatch(addProject(project)))
     .catch(error => console.log(error))
   }
 }
@@ -60,7 +60,7 @@ export const editProjectApi = (projectObj) => {
   return dispatch => {
     return fetch(`/api/projects/${projectObj.id}`,config)
     .then(responce => responce.json())
-    .then(project => console.log(project))
+    .then(project => dispatch(editProject(project)))
     .catch(error => console.log(error))
   }
 }
