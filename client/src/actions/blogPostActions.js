@@ -30,7 +30,7 @@ export const addBlogPostApi = (blogPostObj) => {
       'Authorization': `Bearer ${window.localStorage.jwtToken}`,
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({blogPost: blogPostObj})
+    body: JSON.stringify({blog_post: blogPostObj})
   }
 
   return dispatch => {

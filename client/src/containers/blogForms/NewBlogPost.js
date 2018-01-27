@@ -7,8 +7,8 @@ class NewBlogPost extends Component {
     super();
 
     this.state = {
-      blogPostTitle: '',
-      blogPostContent: ''
+      title: '',
+      body: ''
     }
   }
 
@@ -33,11 +33,11 @@ class NewBlogPost extends Component {
       <div className='container'>
         <h4>NewBlogPost</h4>
         <form onSubmit={event => this.handleOnSubmit(event)}>
-          <label htmlFor="blogPostTitle">Title:</label>
-          <input type="text" id='blogPostTitle' value={this.state.title} onChange={event => this.handleOnChange(event)} />
+          <label htmlFor="title">Title:</label>
+          <input type="text" id='title' value={this.state.title} onChange={event => this.handleOnChange(event)} />
 
-          <label htmlFor="blogPostContent">Content:</label>
-          <input type="text" id='blogPostContent' value={this.state.content} onChange={event => this.handleOnChange(event)} />
+          <label htmlFor=" body">Content:</label>
+          <input type="text" id='body' value={this.state.content} onChange={event => this.handleOnChange(event)} />
 
           <input type='submit' value='post'/>
         </form>
