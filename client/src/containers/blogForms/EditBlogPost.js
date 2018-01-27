@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {connect} from 'react-redux';
 
 class EditBlogPost extends Component {
-  constructor(){
+  constructor({blogPostData}){
     super();
   }
 

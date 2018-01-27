@@ -11,7 +11,7 @@ const Landing = () => {
       <section className="textDiv">
         <h1 id="landingName">Mikyle A. Crawford</h1>
         <br/>
-        <h3 id="title">Full Stack Developer</h3>
+        <h3 id="pageTitle">Full Stack Developer</h3>
         <br/>
       </section>
 

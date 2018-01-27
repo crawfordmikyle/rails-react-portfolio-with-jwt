@@ -15,7 +15,7 @@ class AdminBlogPostsContainer extends Component {
       <div className="AdminBlogPostsContainer container">
         <h4 className='sectionHeading'>BlogPosts</h4>
         <AdminBlogPostsList blogPosts={this.props.blogPosts}/>
-        <Link to={"/admin/blogposts/new"} className='button'>New Blog Post</Link>
+        <Link to={"/admin/blog/new"} className='button'>New Blog Post</Link>
       </div>
     )
   }
