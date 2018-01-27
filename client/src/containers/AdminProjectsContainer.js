@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 class AdminProjectsContainer extends Component {
   
   componentDidMount(){
+    // Note To Self: this seems inefficient and like a problem
     this.props.getProjectsApi()
   }
 

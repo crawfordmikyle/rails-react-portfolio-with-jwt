@@ -12,6 +12,11 @@ export default function projectReducer(state = [],action){
           return project
         }
       })
+    case 'DELETE_PROJECT':
+      return state.filter((project)=>{
+        console.log(project)
+        return(project.id !== action.project.id)
+      })
     default:
       return state;
   }

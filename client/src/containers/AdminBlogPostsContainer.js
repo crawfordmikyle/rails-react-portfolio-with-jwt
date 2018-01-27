@@ -7,6 +7,7 @@ import AdminBlogPostsList from '../components/admin/AdminBlogPostsList';
 class AdminBlogPostsContainer extends Component {
 
   componentDidMount(){
+    // Note To Self: this seems inefficient and like a problem
     this.props.getBlogPostsApi()
   }
 

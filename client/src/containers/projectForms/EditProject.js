@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import {connect} from 'react-redux'
-import {editProjectApi} from '../../actions/projectActions'
+import {editProjectApi,deleteProjectApi} from '../../actions/projectActions'
 
 class EditProject extends Component {
   constructor({projectData}){
@@ -31,7 +31,7 @@ class EditProject extends Component {
     this.props.deleteProjectApi(this.state)
     this.props.history.push('/admin')
   };
-  
+
   render(){
     return(
       <div className='container'>
@@ -67,4 +67,4 @@ const mapStateToProps = (state, ownProps) =>{
   }
 }
 
-export default connect(mapStateToProps,{editProjectApi})(EditProject)
+export default connect(mapStateToProps,{editProjectApi,deleteProjectApi})(EditProject)

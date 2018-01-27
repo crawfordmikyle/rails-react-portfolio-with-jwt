@@ -27,8 +27,9 @@ class Api::ProjectsController < ApplicationController
   def destroy
     set_project
     if @project
+      project_id = @project.id
       @project.delete
-      render json: {message: "project deleted"}, status: 200
+      render json: {message: "project deleted",projectId: project_id.to_s}, status: 200
     else 
       render json: {message: "I can't find that project"}, status: 400
     end
