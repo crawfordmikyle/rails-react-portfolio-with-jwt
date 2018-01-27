@@ -30,8 +30,8 @@ class EditProject extends Component {
     return(
       <div className='container'>
         <form onSubmit={(event)=>this.handleOnSubmit(event)}>
-          <label htmlFor="title">Title:</label>
-          <input type="text" id="title" value={this.state.title} onChange={(event)=>this.handleOnChange(event)}/>
+          <label htmlFor="projectTitle">Title:</label>
+          <input type="text" id="projectTitle" value={this.state.title} onChange={(event)=>this.handleOnChange(event)}/>
           <br/>
           <label htmlFor="description">Description:</label>
           <textarea name="description" id="description" cols="30" rows="10" value={this.state.description} onChange={(event)=>this.handleOnChange(event)}>

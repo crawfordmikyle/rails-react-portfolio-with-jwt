@@ -20,6 +20,10 @@ class Nav extends Component {
     const aboutInfo = document.getElementById('about').getBoundingClientRect();
     this.setState({breakpoint: aboutInfo.height})
   };
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll)
+  }
   
   handleScroll(e) {
     if (window.scrollY > 500){
@@ -41,7 +45,7 @@ class Nav extends Component {
         <nav>
          <ul className="nav ul">
           <li><Link to="/">Home</Link></li>
-          <li><Scrollchor to="#about" animate={{offset:-80}}>About</Scrollchor></li>
+          <li><Scrollchor to="#about" animate={{offset:-50}}>About</Scrollchor></li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Scrollchor to="#contact" animate={{offset:-70}}>Contact</Scrollchor></li>
           <li><Link to="/admin">Login</Link></li>
@@ -55,7 +59,7 @@ class Nav extends Component {
         <nav>
          <ul className="nav ul">
           <li><Link to="/">Home</Link></li>
-          <li><Scrollchor to="#about" animate={{offset:-80}}>About</Scrollchor></li>
+          <li><Scrollchor to="#about" animate={{offset:-90}}>About</Scrollchor></li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Scrollchor to="#contact" animate={{offset:-70}}>Contact Me</Scrollchor></li>
           <li><Link to="/admin">Login</Link></li>

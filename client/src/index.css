@@ -132,11 +132,15 @@ li a{
   width: 100%;
   z-index:1;
 }
-/*Form*/
-input{
+/* Form */
+input {
   width: 100%
 }
-/*Project Cards*/
+
+textarea {
+  width: 100%;
+}
+/* Project Cards */
 
 .projectGrid{
   margin-top: 10px;
@@ -168,13 +172,13 @@ input{
   color:black;
 }
 
-/*Footer*/
+/* Footer */
 #coppyRights{
   padding-top: 15px;
   color: white;
   text-align: center;
 }
-/*Skill Card*/
+/* Skill Card */
 
 .skillCard {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -187,7 +191,7 @@ input{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/*Admin*/
+/* Admin */
 
 .adminHeadingDiv{
   background-image: url('./media/headerbg.jpg');
@@ -215,3 +219,5 @@ input{
   text-align: center;
   margin-bottom: 10px;
 }
+
+/* Blog */

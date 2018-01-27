@@ -6,7 +6,6 @@ const getBlogPosts = (blogPosts) => {
   })
 }
 
-
 // Asynchronous Actions
 
 export const getBlogPostsApi = () => {
