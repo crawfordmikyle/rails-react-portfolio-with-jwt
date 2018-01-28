@@ -12,6 +12,20 @@ const addBlogPost = (blogPost) => {
     blogPost: blogPost,
   })
 };
+
+const editBlogPost = (blogPost) => {
+  return({
+    type: "EDIT_BLOG_POST",
+    blogPost: blogPost,
+  })
+}
+
+const deleteBlogPost = (blogPostId) => {
+  return({
+    type: "DELETE_BLOG_POST",
+    blogPostId: blogPostId,
+  })
+}
 // Asynchronous Actions
 
 export const getBlogPostsApi = () => {

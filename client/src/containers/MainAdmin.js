@@ -8,7 +8,6 @@ import AdminProjectsContainer from './AdminProjectsContainer';
 
 class MainAdmin extends Component{
   render(){
-    // TODO figure out more secure front end login method
     if (this.props.login.isAuthenticated === true) {
       return(
         <div className='container'>
