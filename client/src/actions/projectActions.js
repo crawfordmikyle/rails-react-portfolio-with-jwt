@@ -39,7 +39,7 @@ export const getProjectsApi = () => {
 };
 
 export const addProjectApi = (projectObj) => {
-  const config = {
+  let config = {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${window.localStorage.jwtToken}`,
@@ -56,7 +56,7 @@ export const addProjectApi = (projectObj) => {
 };
 
 export const editProjectApi = (projectObj) => {
-  const config = {
+  let config = {
     method: 'PUT',
     headers: {
       'Authorization':`Bearer ${window.localStorage.jwtToken}`,
@@ -73,7 +73,7 @@ export const editProjectApi = (projectObj) => {
 };
 
 export const deleteProjectApi = (projectObj) => {
-  const config = {
+  let config = {
     method: 'DELETE',
     headers: {
       'Authorization':`Bearer ${window.localStorage.jwtToken}`,

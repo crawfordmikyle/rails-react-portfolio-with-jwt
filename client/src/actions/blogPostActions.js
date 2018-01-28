@@ -54,3 +54,21 @@ export const addBlogPostApi = (blogPostObj) => {
     .catch(error => console.log(error))
   }
 };
+
+export const edditBlogPostApi = (blogPostObj) => {
+  let config = {
+    method: 'PUT',
+    headers:{
+      'Authorization': `Bearer ${window.localStorage.jwtToken}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({blog_post: blogPostObj})
+  }
+
+  return dispatch => {
+    return fetch(`/api/blog_post/${blogPostObj.id}`,config)
+    .then(responce=> responce.json())
+    .then(blogPost => console.log(blogPost))
+    .catch(error => console.log(error))
+  }
+}

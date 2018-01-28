@@ -26,7 +26,7 @@ class Nav extends Component {
   }
   
   handleScroll(e) {
-    if (window.scrollY > 500){
+    if (window.scrollY > this.state.breakpoint){
       this.setState({
         fixed: true
       })

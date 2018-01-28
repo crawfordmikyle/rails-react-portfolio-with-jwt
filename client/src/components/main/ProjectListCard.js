@@ -2,7 +2,6 @@ import React from 'react';
 import projectImg from '../../media/projectImg.jpeg';
 
 const BlogPostListCard = ({projectData}) => {
-  console.log(projectData)
   return(
     <div className='projectCard'>
       <img src={projectImg} alt="" className="projectCardImg"/>
