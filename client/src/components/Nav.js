@@ -47,7 +47,7 @@ class Nav extends Component {
             <li><Link to="/">Home</Link></li>
             <li><Scrollchor to="#about" animate={{offset:-50}}>About</Scrollchor></li>
             <li><Link to="/blog">Blog</Link></li>
-            <li><Scrollchor to="#contact" animate={{offset:-70}}>Contact</Scrollchor></li>
+            <li><Scrollchor to="#contact" animate={{offset:-70}}>Contact Me</Scrollchor></li>
             <li><Link to="/admin">Login</Link></li>
            </ul>
           </nav>

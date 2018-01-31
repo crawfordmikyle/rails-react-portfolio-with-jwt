@@ -47,6 +47,7 @@ html body{
 
 .about{
   clear: both;
+  margin-top: 55px;
 }
 
 .skills{
@@ -54,6 +55,11 @@ html body{
   margin-bottom: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
+}
+
+.headingDiv{
+  background-image: url('./media/headerbg.jpg');
+  height: 30vh;
 }
 /* ID */
 

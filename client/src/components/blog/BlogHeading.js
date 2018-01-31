@@ -2,8 +2,8 @@ import React from "react";
 
 const BlogHeadng = () => {
   return(
-    <div className="blogHeadng">
-      <h1>Back 2 Blocks</h1>
+    <div className="blogHeadng headingDiv">
+      <h1 className='sectionHeading'>Back 2 Blocks</h1>
     </div>
   )
 };
