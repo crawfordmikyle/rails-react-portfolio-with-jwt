@@ -19,8 +19,9 @@ class About extends Component {
   }
 
   componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll);
     const aboutInfo = document.getElementById('about').getBoundingClientRect();
-    this.setState({breakpoint: aboutInfo.height})
+    this.setState({breakpoint: aboutInfo.height});
   }
 
   handleScroll(e){
