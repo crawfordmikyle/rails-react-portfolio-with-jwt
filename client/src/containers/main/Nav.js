@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import Scrollchor from 'react-scrollchor';
 
@@ -7,8 +7,9 @@ class Nav extends Component {
   constructor(){
     super();
     this.state = {
-      breakpoint: 550,
+      breakpoint: 0,
       fixed: false,
+      cssClass: 'full-width-container nav',
     }
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -28,46 +29,32 @@ class Nav extends Component {
   handleScroll(e) {
     if (window.scrollY > this.state.breakpoint){
       this.setState({
-        fixed: true
+        fixed: true,
+        cssClass: 'full-width-container nav sticky'
       })
     } else {
       this.setState({
-        fixed: false
+        fixed: false,
+        cssClass: 'full-width-container nav'
       })
     }
   };
 
 // note to self this is so not dry figure out somthing better
   render(){
-    if(this.state.fixed === true){
-      return(
-        <div className="full-width-container nav sticky">
-          <nav>
-           <ul className="nav ul">
-            <li><Link to="/">Home</Link></li>
-            <li><Scrollchor to="#about" animate={{offset:-50}}>About</Scrollchor></li>
-            <li><Link to="/blog">Blog</Link></li>
-            <li><Scrollchor to="#contact" animate={{offset:-70}}>Contact Me</Scrollchor></li>
-            <li><Link to="/admin">Login</Link></li>
-           </ul>
-          </nav>
-        </div>
-      )
-    } else {
-      return(
-        <div className="full-width-container nav">
-          <nav>
-           <ul className="nav ul">
-            <li><Link to="/">Home</Link></li>
-            <li><Scrollchor to="#about" animate={{offset:-90}}>About</Scrollchor></li>
-            <li><Link to="/blog">Blog</Link></li>
-            <li><Scrollchor to="#contact" animate={{offset:-70}}>Contact Me</Scrollchor></li>
-            <li><Link to="/admin">Login</Link></li>
-           </ul>
-          </nav>
-        </div>
-      )
-    }
+    return(
+      <div className={this.state.cssClass}>
+        <nav>
+         <ul className="nav ul">
+          <li><Link to="/">Home</Link></li>
+          <li><Scrollchor to="#about" animate={{offset:-50}}>About</Scrollchor></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Scrollchor to="#contact" animate={{offset:-70}}>Contact Me</Scrollchor></li>
+          <li><Link to="/admin">Login</Link></li>
+         </ul>
+        </nav>
+      </div>
+    )
   }
 };
 
