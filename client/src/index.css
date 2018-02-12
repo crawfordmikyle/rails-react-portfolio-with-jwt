@@ -194,6 +194,13 @@ textarea {
   text-align: center;
 }
 /* Skill Card */
+.skillGrid{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 15px;
+}
 
 .skillCard {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

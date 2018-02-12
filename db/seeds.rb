@@ -12,3 +12,5 @@ projects = Project.create([{title: "Test Project One",description:"project descr
 blog_posts = BlogPost.create([{title: "Test Blog Post One", body:"blog post body"},{title: "Test Blog Post Two", body:"blog post body"},{title: "Test Blog Post Three", body:"blog post body"}])
 
 messages = Message.create([{name: "Test Sender One", email: "test@test.com", phone:"206-222-2222", message_text:"test message content"},{name: "Test Sender One", email: "test@test.com", phone:"206-222-2222", message_text:"test message content"},{name: "Test Sender One", email: "test@test.com", phone:"206-222-2222", message_text:"test message content"}])
+
+category = Category.create([{name:'html'},{name:'JavaScript'},{name:'Rails'},{ name:'React'},{name:'HTML'},{name:'CSS'}])

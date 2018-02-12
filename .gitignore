@@ -79,3 +79,7 @@ pickle-email-*.html
 *.old
 *.jar
 xerial*.*
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

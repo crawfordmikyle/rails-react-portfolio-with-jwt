@@ -84,7 +84,7 @@ export const deleteProjectApi = (projectObj) => {
   return dispatch => {
     return fetch(`/api/projects/${projectObj.id}`,config)
     .then(responce => responce.json())
-    .then(project => dispatch(deleteProject(project.projectId)))
+    .then(project => dispatch(deleteProject(projectObj)))
     .catch(error => console.log(error))
   }
 };

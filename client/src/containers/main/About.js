@@ -24,6 +24,10 @@ class About extends Component {
     this.setState({breakpoint: aboutInfo.height});
   }
 
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
   handleScroll(e){
     if (window.scrollY > this.state.breakpoint){
       this.setState({
@@ -55,26 +59,26 @@ class About extends Component {
 
           <h5 className='subHeading'>Skills</h5>
 
-          <div className='skills row'>
-            <div className='skillCard four columns' id='html'>
+          <div className='skills skillGrid'>
+            <div className='skillCard' id='html'>
               <img src={htmlLogo} alt="missing" className='skillLogo'/>
             </div>
-            <div className='skillCard four columns' id='ruby'>
+            <div className='skillCard' id='ruby'>
               <img src={rubyLogo} alt="missing" className='skillLogo'/>
             </div>
-            <div className='skillCard four columns' id='JavaScript'>
+            <div className='skillCard' id='JavaScript'>
               <img src={javaScriptLogo} alt="missing" className='skillLogo'/>
             </div>
           </div>
 
-          <div className='skills row'>
-            <div className='skillCard four columns' id='rails'>
+          <div className='skills skillGrid'>
+            <div className='skillCard' id='rails'>
               <img src={railsLogo} alt="missing" className='skillLogo'/>
             </div>
-            <div className='skillCard four columns' id='css'>
+            <div className='skillCard' id='css'>
               <img src={cssLogo} alt="missing" className='skillLogo'/>
             </div>
-            <div className='skillCard four columns' id='react'>
+            <div className='skillCard' id='react'>
               <img src={reactLogo} alt="missing" className='skillLogo'/>
             </div>
           </div>
