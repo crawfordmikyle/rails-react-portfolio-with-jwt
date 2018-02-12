@@ -9,7 +9,9 @@ development:
 production:
   adapter: postgresql
   encoding: unicode
-  database: dev
+  database: ebdb
+  host: aaihgdd75b3863.cezixpwe6tjj.us-west-2.rds.amazonaws.com
+  port: 5432
   pool: 5
   username: mckale
   password: TestDB1!
