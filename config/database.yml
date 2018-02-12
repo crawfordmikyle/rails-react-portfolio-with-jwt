@@ -12,4 +12,4 @@ production:
   database: dev
   pool: 5
   username: mckale
-  password:
+  password: TestDB1!
