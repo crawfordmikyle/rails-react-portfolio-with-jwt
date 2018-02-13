@@ -25,6 +25,7 @@ gem 'foreman', '~> 0.82.0'
 # gem 'capistrano-rails', group: :development
 # gem rails serve static assets
 gem 'rails_serve_static_assets', '~> 0.0.5'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
