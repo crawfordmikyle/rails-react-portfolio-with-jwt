@@ -15,6 +15,10 @@ const Landing = () => {
         <br/>
       </section>
 
+      <section>
+        <button className='contactButton'>Hire Me!</button>
+      </section>
+
     </div>
   )
 };
