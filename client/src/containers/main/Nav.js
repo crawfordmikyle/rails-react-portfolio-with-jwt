@@ -1,4 +1,4 @@
- import React, {Component} from 'react';
+import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import Scrollchor from 'react-scrollchor';
 
@@ -40,7 +40,6 @@ class Nav extends Component {
     }
   };
 
-// note to self this is so not dry figure out somthing better
   render(){
     return(
       <div className={this.state.cssClass}>
