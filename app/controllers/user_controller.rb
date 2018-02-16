@@ -1,7 +1,10 @@
 class UserController < ApplicationController
   def create
-    user = User.create(user_params)
-    binding.pry
+    if User.create(user_params)
+      render json: 'user created', status: 200
+    else 
+      render json: 'error', status: 500
+    end 
   end 
 
   private
