@@ -5,7 +5,13 @@ export default function blogPostReducer(state = [],action){
     case "ADD_BLOG_POST":
       return state.concat(action.blogPost);
     case "EDIT_BLOG_POST":
-      return state;
+      return state.map((blogPost)=>{
+        if(blogPost.id === action.blogPost.id){
+          return action.blogPost
+        } else {
+          return blogPost
+        }
+      });
     case "DELETE_BLOG_POST":
       return state;
     default:

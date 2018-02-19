@@ -55,7 +55,7 @@ export const addBlogPostApi = (blogPostObj) => {
   }
 };
 
-export const edditBlogPostApi = (blogPostObj) => {
+export const editBlogPostApi = (blogPostObj) => {
   let config = {
     method: 'PUT',
     headers:{
@@ -66,9 +66,27 @@ export const edditBlogPostApi = (blogPostObj) => {
   }
 
   return dispatch => {
-    return fetch(`/api/blog_post/${blogPostObj.id}`,config)
-    .then(responce=> responce.json())
+    return fetch(`/api/blog_posts/${blogPostObj.id}`,config)
+    .then(responce => responce.json())
     .then(blogPost => console.log(blogPost))
     .catch(error => console.log(error))
   }
-}
+};
+
+export const deleteBlogPostApi = (blogPostObj) => {
+  let config = {
+    method: 'DELETE',
+    headers:{
+      'Authorization': `Bearer ${window.localStorage.jwtToken}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({blog_post: blogPostObj})
+  }
+
+  return dispatch => {
+    return fetch(`/api/blog_posts/${blogPostObj.id}`,config)
+    .then(responce => responce.json())
+    .then(blogPost => console.log(blogPost))
+    .catch(error => console.log(error))
+  }
+};

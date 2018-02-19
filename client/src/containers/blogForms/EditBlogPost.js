@@ -1,25 +1,39 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
+import {editBlogPostApi, deleteBlogPostApi} from '../../actions/blogPostActions'
 
 class EditBlogPost extends Component {
   constructor({blogPostData}){
     super();
+    this.state = {
+      id: blogPostData.id,
+      title: blogPostData.title,
+      body: blogPostData.body,
+    }
   }
 
-  componentDidMount(){
+  handleOnChange = (event) => {
+    this.setState({
+      [event.target.id]:event.target.value
+    })
+  };
 
+  updateBlogPost = (event) => {
+    event.preventDefault();
+    this.props.editBlogPostApi(this.state)
+    this.props.history.push('/admin')
   }
 
   render(){
     return(
       <div className='container'>
-        <h4>NewBlogPost</h4>
-        <form>
-          <label htmlFor="">Title:</label>
-          <input type="text"/>
+        <h4>Edit Blog Post</h4>
+        <form onSubmit={(event)=>this.updateBlogPost(event)}>
+          <label htmlFor="title">Title:</label>
+          <input type="text" id='title' value={this.state.title} onChange={(event)=>this.handleOnChange(event)}/>
 
-          <label htmlFor="">Content:</label>
-          <input type="text"/>
+          <label htmlFor="body">Body:</label>
+          <input type="text" id='body' value={this.state.body} onChange={(event)=>this.handleOnChange(event)}/>
 
           <input type='submit' value='post'/>
         </form>
@@ -28,4 +42,13 @@ class EditBlogPost extends Component {
   }
 };
 
-export default connect(null)(EditBlogPost);
+const mapStateToProps = (state,ownProps) => {
+  const blogPostData = state.blogPostReducer.find((project)=>(project.id.toString() === ownProps.match.params.id))
+  if(blogPostData){
+    return({blogPostData: blogPostData})
+  } else {
+    return({blogPostData: {}})
+  }
+}
+
+export default connect(mapStateToProps,{editBlogPostApi,deleteBlogPostApi})(EditBlogPost);

@@ -56,6 +56,10 @@ html body{
   background-image: url('./media/headerbg.jpg');
   height: 30vh;
 }
+
+.adminLink{
+  color: black;
+}
 /* ID */
 
 #landingName{
@@ -180,10 +184,6 @@ textarea {
   width: 90%;
   height: auto;
   margin-top: 10px;
-}
-
-.projectLink{
-  color:black;
 }
 
 /* Footer */
