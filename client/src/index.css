@@ -145,14 +145,13 @@ textarea {
 }
 
 /* About */
-#aboutFixed{
+.aboutFixed{
   clear: both;
   margin-top: 55px;
 }
 
-#about{
+.about{
   clear:both;
-  margin-top: 0px;
 }
 
 /* Project Cards */

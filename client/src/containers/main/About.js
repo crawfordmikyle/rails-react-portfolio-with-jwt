@@ -13,7 +13,7 @@ class About extends Component {
     this.state = {
       breakpoint: 550,
       fixed: false,
-      cssId: 'about',
+      cssClass: 'about container section',
     }
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -32,19 +32,19 @@ class About extends Component {
     if (window.scrollY > this.state.breakpoint){
       this.setState({
         fixed: true,
-        cssId: 'aboutFixed'
+        cssClass: 'container section aboutFixed'
       })
     } else {
       this.setState({
         fixed: false,
-        cssId: 'about',
+        cssClass: 'about container section',
       })
     }
   }
 
   render(){
     return(
-      <div className="about container section" id={this.state.cssId}>
+      <div className={this.state.cssClass} id='about'>
 
         <h4 className='sectionHeading'>About Me</h4>
 
