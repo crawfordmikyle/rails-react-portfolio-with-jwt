@@ -24,6 +24,12 @@ class EditBlogPost extends Component {
     this.props.history.push('/admin')
   }
 
+  deleteBlogPost = (event) => {
+    event.preventDefault();
+    this.props.deleteBlogPostApi(this.state)
+    this.props.history.push('/admin')
+  }
+
   render(){
     return(
       <div className='container'>
@@ -35,7 +41,10 @@ class EditBlogPost extends Component {
           <label htmlFor="body">Body:</label>
           <input type="text" id='body' value={this.state.body} onChange={(event)=>this.handleOnChange(event)}/>
 
-          <input type='submit' value='post'/>
+          <input type='submit' value='Update Blog Post'/>
+        </form>
+        <form onSubmit={(event)=>this.deleteBlogPost(event)}>
+          <input type="submit" value='Delete Blog Post'/>
         </form>
       </div>
     )

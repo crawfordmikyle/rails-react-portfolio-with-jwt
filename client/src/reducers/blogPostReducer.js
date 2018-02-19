@@ -13,7 +13,9 @@ export default function blogPostReducer(state = [],action){
         }
       });
     case "DELETE_BLOG_POST":
-      return state;
+      return state.filter((blogPost)=>{
+        return(blogPost.id !== action.blogPostId.id)
+      });
     default:
       return state;
   }

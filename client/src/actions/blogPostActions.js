@@ -68,7 +68,7 @@ export const editBlogPostApi = (blogPostObj) => {
   return dispatch => {
     return fetch(`/api/blog_posts/${blogPostObj.id}`,config)
     .then(responce => responce.json())
-    .then(blogPost => console.log(blogPost))
+    .then(blogPost => dispatch(editBlogPost(blogPostObj)))
     .catch(error => console.log(error))
   }
 };
@@ -86,7 +86,7 @@ export const deleteBlogPostApi = (blogPostObj) => {
   return dispatch => {
     return fetch(`/api/blog_posts/${blogPostObj.id}`,config)
     .then(responce => responce.json())
-    .then(blogPost => console.log(blogPost))
+    .then(blogPost => dispatch(deleteBlogPost(blogPostObj)))
     .catch(error => console.log(error))
   }
 };
