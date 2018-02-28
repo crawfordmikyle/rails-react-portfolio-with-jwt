@@ -6,7 +6,7 @@ const AdminBlogPostsList = ({blogPosts}) => {
     return(
       <AdminBlogPostCard key={blogPost.id} blogPostData={blogPost} />
     )  
-  })
+  });
 
   return(
     <div className='row adminGrid'>

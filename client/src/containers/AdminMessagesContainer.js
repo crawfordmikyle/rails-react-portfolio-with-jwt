@@ -6,7 +6,6 @@ import AdminMessagesList from '../components/admin/AdminMessagesList';
 class AdminMessagesContainer extends Component {
   
   componentDidMount(){
-    // Note To Self: this seems inefficient and like a problem
     this.props.getMessagesApi();
   }
 

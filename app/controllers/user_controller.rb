@@ -1,6 +1,6 @@
 class UserController < ApplicationController
   def create
-    if User.create(user_params)
+    if User.all.empty? && User.create(user_params)
       render json: 'user created', status: 200
     else 
       render json: 'error', status: 500

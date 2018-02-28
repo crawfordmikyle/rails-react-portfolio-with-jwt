@@ -7,7 +7,9 @@ import AdminBlogPostsList from '../components/admin/AdminBlogPostsList';
 class AdminBlogPostsContainer extends Component {
 
   componentDidMount(){
-    this.props.getBlogPostsApi()
+    if(this.props.blogPosts.length === 0){
+      this.props.getBlogPostsApi()
+    }
   }
 
   render(){
