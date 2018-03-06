@@ -32,12 +32,12 @@ class About extends Component {
     if (window.scrollY > this.state.breakpoint){
       this.setState({
         fixed: true,
-        cssClass: 'container section aboutFixed'
+        cssClass: 'container section aboutFixed row'
       })
     } else {
       this.setState({
         fixed: false,
-        cssClass: 'about container section',
+        cssClass: 'about container section row',
       })
     }
   }
@@ -59,7 +59,7 @@ class About extends Component {
 
           <h5 className='subHeading'>Skills</h5>
 
-          <div className='skills skillGrid'>
+          <div className='skills twelve columns skillGrid'>
             <div className='skillCard' id='html'>
               <img src={htmlLogo} alt="missing" className='skillLogo'/>
             </div>
@@ -71,7 +71,7 @@ class About extends Component {
             </div>
           </div>
 
-          <div className='skills skillGrid'>
+          <div className='skills twelve columns skillGrid'>
             <div className='skillCard' id='rails'>
               <img src={railsLogo} alt="missing" className='skillLogo'/>
             </div>

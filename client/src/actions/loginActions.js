@@ -7,7 +7,7 @@ const requestLogin = (data) => {
     isAuthenticated: false,
     data: data,
   })
-}
+};
 
 const receiveLogin = (user) => {
   return({
@@ -16,7 +16,7 @@ const receiveLogin = (user) => {
     isAuthenticated: true,
     user_token: user,
   })
-}
+};
 
 const loginError = (message) => {
   return({
@@ -25,7 +25,7 @@ const loginError = (message) => {
     isAuthenticated: false,
     message: message,
   })
-}
+};
 
 
 // Asynchronous Actions
@@ -37,7 +37,7 @@ export function login(creds) {
     method: 'POST',
     headers: { 'Content-Type':'application/json' },
     body: JSON.stringify(authData),
-  }
+  };
 
   return dispatch => {
     // We dispatch requestLogin to kickoff the call to the API
@@ -60,5 +60,5 @@ export function login(creds) {
           dispatch(receiveLogin(user))
         }
       }).catch(err => console.log("Error: ", err))
-  }
-}
+  };
+};

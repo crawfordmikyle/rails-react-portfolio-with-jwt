@@ -206,6 +206,7 @@ textarea {
   transition: 0.3s;
   padding: 2px 16px;
   width: 15vw;
+  margin: auto;
 }
 
 .skillCard:hover {
