@@ -165,7 +165,6 @@ textarea {
   margin-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 15px;
 }
 
 .projectCard{
@@ -242,6 +241,14 @@ textarea {
 }
 
 /* Blog */
+
+.blogPostCard{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 /* Landing */
 .contactButton{
