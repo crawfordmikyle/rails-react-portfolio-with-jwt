@@ -3,7 +3,7 @@ class Api::ProjectsController < ApplicationController
 
   def index
     projects = Project.all
-    render json: projects, status: 200
+    render json: projects, serializer: Api::ProjectSerializer, status: 200
   end 
 
   def create
