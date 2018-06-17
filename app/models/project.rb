@@ -1,3 +1,3 @@
 class Project < ApplicationRecord
-  has_and_belongs_to_many :categories
+  has_many :project_categories
 end
